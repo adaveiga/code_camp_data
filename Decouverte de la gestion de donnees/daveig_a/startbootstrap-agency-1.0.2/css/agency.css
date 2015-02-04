@@ -77,6 +77,10 @@ h6 {
     background-color: #fed136;
 }
 
+.topbuttons{
+    font-color: black;
+}
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
@@ -265,7 +269,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
+    background-image: url(../../images/frontpage.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -653,7 +657,7 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url(../img/map-image.png);
+    background-image: url(./images/frontpage.png);
     background-position: center;
     background-repeat: no-repeat;
 }
