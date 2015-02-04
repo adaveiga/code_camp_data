@@ -1,6 +1,4 @@
 <?php
-//header('Content-Type: application/json; charset=utf-8');
-
 function lire_csv($nom_fichier, $separateur =";") {
     $row = 0;
     $donnee = array();    
@@ -17,7 +15,8 @@ function lire_csv($nom_fichier, $separateur =";") {
 }
 
 $result = lire_csv('liste.csv');
-
+json_encode($result);
+file_put_contents('tab.json', 'data')
 print_r($result);
 
 $json = json_encode($result);
