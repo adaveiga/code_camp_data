@@ -1,7 +1,7 @@
 <?php
 //header('Content-Type: application/json; charset=utf-8');
 
-function lire_csv($nom_fichier, $separateur =";") {
+/*function lire_csv($nom_fichier, $separateur =";") {
     $row = 0;
     $donnee = array();    
     $f = fopen($nom_fichier,"r");
@@ -14,14 +14,18 @@ function lire_csv($nom_fichier, $separateur =";") {
     }
     fclose ($f);
     return $result;
-}
+}*/
 
-$result = lire_csv('liste.csv');
+$result = file_get_contents('test.json');
 
-print_r($result);
+$json = json_decode($result);
 
-$json = json_encode($result);
 
-file_put_contents("liste_json.json", $json);
+
+print_r($json);
+
+//$json = json_encode($result);
+
+//file_put_contents("test.json", $json);
 
 ?>
