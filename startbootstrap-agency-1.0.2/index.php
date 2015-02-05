@@ -57,7 +57,7 @@
                         <a class="page-scroll" href="#services">Projet</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Categories</a>
+                        <a class="page-scroll" href="#portfolio">Catégories</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">Calculateur</a>
@@ -89,7 +89,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Notre projet</h2>
-                    <h3 class="section-subheading text-muted">Lors de la realisation de ce projet, nous avions differents objectifs</h3>
+                    <h3 class="section-subheading text-muted">Lors de la réalisation de ce projet, nous avions différents objectifs</h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -99,7 +99,7 @@
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Mangez malin !</h4>
-                    <p class="text-muted">En repertoriant les apports nutrionnels de certains aliments, notre objectif etait d'aider le public le plus large a se renseigner sur ce qu'il mange vraiment.</p>
+                    <p class="text-muted">En répertoriant les apports nutrionnels de certains aliments, notre objectif était d'aider le public le plus large a se renseigner sur ce qu'il mange vraiment.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -107,15 +107,15 @@
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Nous voulons vous offrir une experience ergonomique et ludique, que ce soit sur votre ordinateur ou votre smartphone.</p>
+                    <p class="text-muted">Nous voulons vous offrir une expérience ergonomique et ludique, que ce soit sur votre ordinateur ou votre smartphone.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Navigation securisee</h4>
-                    <p class="text-muted">Nous n'effectuons aucune transaction commerciale pour aucun produit que nous presentons, aucune inscription payante n'est necessaire pour l'usage de notre site.</p>
+                    <h4 class="service-heading">Navigation sécurisée</h4>
+                    <p class="text-muted">Nous n'effectuons aucune transaction commerciale pour aucun produit que nous presentons, aucune inscription payante n'est nécessaire pour l'usage de notre site.</p>
                 </div>
             </div>
         </div>
@@ -131,14 +131,14 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item" style="height:350px;width:250px">
+                <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/produitslaitiers.jpg" class="img-responsive" alt="">
+                        <img src="img/portfolio/produitslaitiers.jpg" class="img-responsive" alt="" style="height:360px;width:360px">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Produits Laitiers</h4>
@@ -152,7 +152,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/fruits.jpg" class="img-responsive" alt="">
+                        <img src="img/portfolio/fruits.jpg" class="img-responsive" alt="" style="height:360px;width:360px">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Fruits et Légumes</h4>
@@ -166,7 +166,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/boissons.jpg" class="img-responsive" alt="">
+                        <img src="img/portfolio/boissons.jpg" class="img-responsive" alt="" style="height:360px;width:360px">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Boissons</h4>
@@ -180,10 +180,10 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="" class="img-responsive" alt="">
+                        <img src="img/portfolio/viande.jpg" class="img-responsive" alt="" style="height:360px;width:360px">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Viandes</h4>
+                        <h4>Viandes et poissons</h4>
                         <p class="text-muted">Volailles, bovins, etc.</p>
                     </div>
                 </div>
@@ -194,10 +194,10 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="" class="img-responsive" alt="">
+                        <img src="img/portfolio/poissons.jpg" class="img-responsive" alt="" style="height:360px;width:360px">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Poissons</h4>
+                        <h4>Plats</h4>
                         <p class="text-muted">Tout ce qu'on trouve dans la mer !</p>
                     </div>
                 </div>
@@ -208,7 +208,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="" class="img-responsive" alt="">
+                        <img src="img/portfolio/autres.jpg" class="img-responsive" alt="" style="height:360px;width:360px">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Autres</h4>
@@ -305,7 +305,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">L'equipe What's In My Food</h2>
+                    <h2 class="section-heading">L'équipe What's In My Food</h2>
                 </div>
             </div>
             <div class="row">
@@ -390,7 +390,7 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="#">Politique de confidentialite</a>
+                        <li><a href="#">Politique de confidentialité</a>
                         </li>
                         <li><a href="#">Conditions d'utilisation</a>
                         </li>
@@ -416,14 +416,13 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <?php 
-                            $json = file_get_contents('liste_json.json');
+                            <?php $json = file_get_contents('liste_json.json');
                             $tab = json_decode($json);
                             for ($i = 0; isset($tab->ORIGGPFR[$i]); $i++):?>
-                            <?php if(substr($tab->ORIGGPFR[$i], 0, 8) == "Fromages")
-                                echo "<button id=\"".$i."\" class=\"\">".$tab->ORIGFDNM[$i]."</button><br>";?>
+                            <?php if(substr($tab->ORIGGPFR[$i], 0, 8) == "Fromages" || substr($tab->ORIGGPFR[$i], 0, 5) == "Laits" || substr($tab->ORIGFDNM[$i], 0, 4) == "Lait" || substr($tab->ORIGGPFR[$i], 0, 6) == "Yaourt" || substr($tab->ORIGFDNM[$i], 0, 6) == "Yaourt" || substr($tab->ORIGFDNM[$i], 0, 6) == "Beurre" || substr($tab->ORIGFDNM[$i], 0, 6) == "Crème" || substr($tab->ORIGGPFR[$i], 0, 6) == "Crème")
+                            echo "<a>".$tab->ORIGFDNM[$i]."</a><br>";?> 
                             <?php endfor;?>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close categorie</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
@@ -444,11 +443,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Heading</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                            <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                            <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                             <?php $json = file_get_contents('liste_json.json');
+                            $tab = json_decode($json);
+                            for ($i = 0; isset($tab->ORIGGPFR[$i]); $i++):?>
+                            <?php if(substr($tab->ORIGGPFR[$i], 0, 6) == "Fruits" || substr($tab->ORIGGPFR[$i], 0, 8) == "Légumes" || substr($tab->ORIGGPFR[$i], 0, 15) == "Pommes de terre")
+                            echo "<a>".$tab->ORIGFDNM[$i]."</a><br>";?> 
+                            <?php endfor;?>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -470,12 +470,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                            <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <?php $json = file_get_contents('liste_json.json');
+                            $tab = json_decode($json);
+                            for ($i = 0; isset($tab->ORIGGPFR[$i]); $i++):?>
+                            <?php if($tab->ORIGFDNM[$i] == "Eau du robinet" || substr($tab->ORIGGPFR[$i], 0, 9) == "Cocktails" || substr($tab->ORIGGPFR[$i], 0, 3) == "Jus" || substr($tab->ORIGGPFR[$i], 0, 8) == "Liqueurs" || substr($tab->ORIGGPFR[$i], 0, 4) == "Vins" || substr($tab->ORIGGPFR[$i], -6) == "alcool")
+                            echo "<a>".$tab->ORIGFDNM[$i]."</a><br>";?> 
+                            <?php endfor;?>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -497,12 +497,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-                            <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                            <?php $json = file_get_contents('liste_json.json');
+                            $tab = json_decode($json);
+                            for ($i = 0; isset($tab->ORIGGPFR[$i]); $i++):?>
+                            <?php if($tab->ORIGGPFR[$i] == "Abats" || $tab->ORIGGPFR[$i] == "Viandes" || $tab->ORIGGPFR[$i] == "Volailles" || substr($tab->ORIGGPFR[$i], 0, 12) == "Charcuteries" || substr($tab->ORIGGPFR[$i], 0, 8) == "Poissons" || substr($tab->ORIGGPFR[$i], -8) == "poissons")
+                            echo "<a>".$tab->ORIGFDNM[$i]."</a><br>";?> 
+                            <?php endfor;?>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -524,12 +524,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                            <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
+                           <?php $json = file_get_contents('liste_json.json');
+                            $tab = json_decode($json);
+                            for ($i = 0; isset($tab->ORIGGPFR[$i]); $i++):?>
+                            <?php if(substr($tab->ORIGGPFR[$i], 0, 5) == "Plats" || substr($tab->ORIGGPFR[$i], 0, 6) == "Pizzas")
+                            echo "<a>".$tab->ORIGFDNM[$i]."</a><br>";?> 
+                            <?php endfor;?>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -551,14 +551,13 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                            <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                           <?php $json = file_get_contents('liste_json.json');
+                            $tab = json_decode($json);
+                            for ($i = 0; isset($tab->ORIGGPFR[$i]); $i++):?>
+                            <?php if(substr($tab->ORIGGPFR[$i], 0, 5) != "Plats" && substr($tab->ORIGGPFR[$i], 0, 6) != "Pizzas" && $tab->ORIGGPFR[$i] != "Abats" && $tab->ORIGGPFR[$i] != "Viandes" && $tab->ORIGGPFR[$i] != "Volailles" && substr($tab->ORIGGPFR[$i], 0, 12) != "Charcuteries" && substr($tab->ORIGGPFR[$i], 0, 8) != "Poissons" && substr($tab->ORIGGPFR[$i], -8) != "poissons" && $tab->ORIGGPFR[$i] != "Eaux" && substr($tab->ORIGGPFR[$i], 0, 9) != "Cocktails" && substr($tab->ORIGGPFR[$i], 0, 3) != "Jus" && substr($tab->ORIGGPFR[$i], 0, 8) != "Liqueurs" && substr($tab->ORIGGPFR[$i], 0, 4) != "Vins" && substr($tab->ORIGGPFR[$i], -6) != "alcool" && substr($tab->ORIGGPFR[$i], 0, 6) != "Fruits" && substr($tab->ORIGGPFR[$i], 0, 8) != "Légumes" && substr($tab->ORIGGPFR[$i], 0, 15) != "Pommes de terre" && substr($tab->ORIGGPFR[$i], 0, 8) != "Fromages" && substr($tab->ORIGGPFR[$i], 0, 5) != "Laits" && substr($tab->ORIGFDNM[$i], 0, 4) != "Lait" && substr($tab->ORIGGPFR[$i], 0, 6) != "Yaourt" && substr($tab->ORIGFDNM[$i], 0, 6) != "Yaourt" && substr($tab->ORIGFDNM[$i], 0, 6) != "Beurre" && substr($tab->ORIGFDNM[$i], 0, 6) != "Crème" && substr($tab->ORIGGPFR[$i], 0, 6) != "Crème" && substr($tab->ORIGGPFR[$i], -4) != "Inca")
+                            echo "<a>".$tab->ORIGFDNM[$i]."</a><br>";?> 
+                            <?php endfor;?>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
                     </div>
                 </div>
             </div>
