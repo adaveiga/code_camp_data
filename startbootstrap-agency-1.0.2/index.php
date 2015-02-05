@@ -131,7 +131,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item" style="height:350px;width:250px">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -173,14 +173,14 @@
                         <p class="text-muted">Quand l'eau ne suffit pas !</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-5 portfolio-item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/viande.jpg" class="img-responsive" alt="">
+                        <img src="" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Viandes</h4>
@@ -194,7 +194,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/poissons.jpg" class="img-responsive" alt="">
+                        <img src="" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Poissons</h4>
@@ -208,7 +208,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/autres.jpg" class="img-responsive" alt="">
+                        <img src="" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Autres</h4>
@@ -334,7 +334,7 @@
                             </li>
                             <li><a href="#"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href="http://fr.linkedin.com/pub/ulric-kouassi/a3/652/605/fr"><i class="fa fa-linkedin" target="_blank"></i></a>
+                            <li><a href="http://fr.linkedin.com/pub/ulric-kouassi/a3/652/605/fr" target="_blank"><i class="fa fa-linkedin"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -349,12 +349,12 @@
                             </li>
                             <li><a href="#"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href="http://fr.linkedin.com/pub/null-null/b0/a64/127/fr"><i class="fa fa-linkedin" target="_blank"></i></a>
+                            <li><a href="http://fr.linkedin.com/pub/null-null/b0/a64/127/fr" target="_blank"><i class="fa fa-linkedin" target="_blank"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-17">
                    <div class="team-member">
                         <img src="img/team/aurelien.jpg" class="img-responsive img-circle" alt="">
                         <center><h4>Aurélien Adam</h4></center>
@@ -364,7 +364,7 @@
                             </li>
                             <li><a href="#"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href="http://fr.linkedin.com/pub/aur%C3%A9lien-adam/80/232/150/fr"><i class="fa fa-linkedin" target="_blank"></i></a>
+                            <li><a href="http://fr.linkedin.com/pub/aur%C3%A9lien-adam/80/232/150/fr" target="_blank"><i class="fa fa-linkedin" target="_blank"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -416,19 +416,14 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                            <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <?php 
+                            $json = file_get_contents('liste_json.json');
+                            $tab = json_decode($json);
+                            for ($i = 0; isset($tab->ORIGGPFR[$i]); $i++):?>
+                            <?php if(substr($tab->ORIGGPFR[$i], 0, 8) == "Fromages")
+                                echo "<button id=\"".$i."\" class=\"\">".$tab->ORIGFDNM[$i]."</button><br>";?>
+                            <?php endfor;?>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close categorie</button>
                         </div>
                     </div>
                 </div>
