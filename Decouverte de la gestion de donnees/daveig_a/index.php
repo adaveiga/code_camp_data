@@ -356,12 +356,6 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!--<?php $json = file_get_contents('liste_json.json');
-                            $tab = json_decode($json);
-                            for ($i = 0; isset($tab->ORIGGPFR[$i]); $i++):?>
-                            <?php if($tab->ORIGFDNM[$i] == "Eau du robinet" || substr($tab->ORIGGPFR[$i], 0, 9) == "Cocktails" || substr($tab->ORIGGPFR[$i], 0, 3) == "Jus" || substr($tab->ORIGGPFR[$i], 0, 8) == "Liqueurs" || substr($tab->ORIGGPFR[$i], 0, 4) == "Vins" || substr($tab->ORIGGPFR[$i], -6) == "alcool")
-                            echo "<a>".$tab->ORIGFDNM[$i]."</a><br>";?> 
-                            <?php endfor;?>-->
                             <button id="button3" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -383,12 +377,6 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <?php $json = file_get_contents('liste_json.json');
-                            $tab = json_decode($json);
-                            for ($i = 0; isset($tab->ORIGGPFR[$i]); $i++):?>
-                            <?php if($tab->ORIGGPFR[$i] == "Abats" || $tab->ORIGGPFR[$i] == "Viandes" || $tab->ORIGGPFR[$i] == "Volailles" || substr($tab->ORIGGPFR[$i], 0, 12) == "Charcuteries" || substr($tab->ORIGGPFR[$i], 0, 8) == "Poissons" || substr($tab->ORIGGPFR[$i], -8) == "poissons")
-                            echo "<a>".$tab->ORIGFDNM[$i]."</a><br>";?> 
-                            <?php endfor;?>
                             <button id="button4" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -410,12 +398,6 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                           <?php $json = file_get_contents('liste_json.json');
-                            $tab = json_decode($json);
-                            for ($i = 0; isset($tab->ORIGGPFR[$i]); $i++):?>
-                            <?php if(substr($tab->ORIGGPFR[$i], 0, 5) == "Plats" || substr($tab->ORIGGPFR[$i], 0, 6) == "Pizzas")
-                            echo "<a>".$tab->ORIGFDNM[$i]."</a><br>";?> 
-                            <?php endfor;?>
                             <button id="button5" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>

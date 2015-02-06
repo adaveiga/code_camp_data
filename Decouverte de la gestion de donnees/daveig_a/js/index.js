@@ -95,14 +95,12 @@ function boissons(tab)
 				}).insertBefore("#button3");
 	for (var i = 0; i < 1496; i++)
 		{
-			if (tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
-				tab.ORIGGPFR[i].substr(0, 5) == "Laits" || 
-				tab.ORIGFDNM[i].substr(0, 4) == "Lait" || 
-				tab.ORIGGPFR[i].substr(0, 6) == "Yaourt" || 
-				tab.ORIGFDNM[i].substr(0, 6) == "Yaourt" || 
-				tab.ORIGFDNM[i].substr(0, 6) == "Beurre" || 
-				tab.ORIGFDNM[i].substr(0, 6) == "Crème" || 
-				tab.ORIGGPFR[i].substr(0, 6) == "Crème")
+			if (tab.ORIGFDNM[i] == "Eau du robinet" ||
+				tab.ORIGGPFR[i].substr(0, 9) == "Cocktails" ||
+				tab.ORIGGPFR[i].substr(0, 3) == "Jus" ||
+				tab.ORIGGPFR[i].substr(0, 8) == "Liqueurs" ||
+				tab.ORIGGPFR[i].substr(0, 4) == "Vins" ||
+				tab.ORIGGPFR[i].slice(-6) == "alcool")
 			{
 				jQuery('<a/>', {
 					id : i
@@ -120,14 +118,12 @@ function viandes_poissons(tab)
 				}).insertBefore("#button4");
 	for (var i = 0; i < 1496; i++)
 		{
-			if (tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
-				tab.ORIGGPFR[i].substr(0, 5) == "Laits" || 
-				tab.ORIGFDNM[i].substr(0, 4) == "Lait" || 
-				tab.ORIGGPFR[i].substr(0, 6) == "Yaourt" || 
-				tab.ORIGFDNM[i].substr(0, 6) == "Yaourt" || 
-				tab.ORIGFDNM[i].substr(0, 6) == "Beurre" || 
-				tab.ORIGFDNM[i].substr(0, 6) == "Crème" || 
-				tab.ORIGGPFR[i].substr(0, 6) == "Crème")
+			if (tab.ORIGGPFR[i] == "Abats" ||
+				tab.ORIGGPFR[i] == "Viandes" ||
+				tab.ORIGGPFR[i] == "Volailles" ||
+				tab.ORIGGPFR[i].substr(0, 12) == "Charcuteries"||
+				tab.ORIGGPFR[i].substr(0, 8) == "Poissons" ||
+				tab.ORIGGPFR[i].slice(-8) == "poissons")
 			{
 				jQuery('<a/>', {
 					id : i
@@ -145,14 +141,8 @@ function plats(tab)
 				}).insertBefore("#button5");
 	for (var i = 0; i < 1496; i++)
 		{
-			if (tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
-				tab.ORIGGPFR[i].substr(0, 5) == "Laits" || 
-				tab.ORIGFDNM[i].substr(0, 4) == "Lait" || 
-				tab.ORIGGPFR[i].substr(0, 6) == "Yaourt" || 
-				tab.ORIGFDNM[i].substr(0, 6) == "Yaourt" || 
-				tab.ORIGFDNM[i].substr(0, 6) == "Beurre" || 
-				tab.ORIGFDNM[i].substr(0, 6) == "Crème" || 
-				tab.ORIGGPFR[i].substr(0, 6) == "Crème")
+			if (tab.ORIGGPFR[i].substr(0, 5) == "Plats" ||
+				tab.ORIGGPFR[i].substr(0, 6) == "Pizzas")
 			{
 				jQuery('<a/>', {
 					id : i
@@ -170,14 +160,19 @@ function autres(tab)
 				}).insertBefore("#button6");
 	for (var i = 0; i < 1496; i++)
 		{
-			if (tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
-				tab.ORIGGPFR[i].substr(0, 5) == "Laits" || 
-				tab.ORIGFDNM[i].substr(0, 4) == "Lait" || 
-				tab.ORIGGPFR[i].substr(0, 6) == "Yaourt" || 
-				tab.ORIGFDNM[i].substr(0, 6) == "Yaourt" || 
-				tab.ORIGFDNM[i].substr(0, 6) == "Beurre" || 
-				tab.ORIGFDNM[i].substr(0, 6) == "Crème" || 
-				tab.ORIGGPFR[i].substr(0, 6) == "Crème")
+			if (tab.ORIGGPFR[i].substr(0, 5) != "Plats" && tab.ORIGGPFR[i].substr(0, 6) != "Pizzas" &&
+				tab.ORIGGPFR[i] != "Abats" && tab.ORIGGPFR[i] != "Viandes" &&
+				tab.ORIGGPFR[i] != "Volailles" && tab.ORIGGPFR[i].substr(0, 12) != "Charcuteries" &&
+				tab.ORIGGPFR[i].substr(0, 8) != "Poissons" && tab.ORIGGPFR[i].substr(-8) != "poissons" &&
+				tab.ORIGGPFR[i] != "Eaux" && tab.ORIGGPFR[i].substr(0, 9) != "Cocktails" &&
+				tab.ORIGGPFR[i].substr(0, 3) != "Jus" && tab.ORIGGPFR[i].substr(0, 8) != "Liqueurs" &&
+				tab.ORIGGPFR[i].substr(0, 4) != "Vins" && tab.ORIGGPFR[i].slice(-6) != "alcool" &&
+				tab.ORIGGPFR[i].substr(0, 6) != "Fruits" &&	tab.ORIGGPFR[i].substr(0, 8) != "Légumes" &&
+				tab.ORIGGPFR[i].substr(0, 15) != "Pommes de terre" && tab.ORIGGPFR[i].substr(0, 8) != "Fromages" &&
+				tab.ORIGGPFR[i].substr(0, 5) != "Laits" && tab.ORIGFDNM[i].substr(0, 4) != "Lait" &&
+				tab.ORIGGPFR[i].substr(0, 6) != "Yaourt" && tab.ORIGFDNM[i].substr(0, 6) != "Yaourt" &&
+				tab.ORIGFDNM[i].substr(0, 6) != "Beurre" && tab.ORIGFDNM[i].substr(0, 6) != "Crème" &&
+				tab.ORIGGPFR[i].substr(0, 6) != "Crème" && tab.ORIGGPFR[i].slice(-4) != "Inca")
 			{
 				jQuery('<a/>', {
 					id : i
