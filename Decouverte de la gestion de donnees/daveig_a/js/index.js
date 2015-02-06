@@ -19,9 +19,9 @@ $.ajax(
 				data.ORIGFDNM[i].substr(0, 6) == "Crème" || 
 				data.ORIGGPFR[i].substr(0, 6) == "Crème")
 			{
-				$.("#p1").append("div");
-				$.("#p1 > div:last-child").attr("id", i);
-				$.("#" + i).text(data.ORIGFDNM[i]);
+				$("#p1").append("div");
+				$("#p1 > div:last-child").attr("id", i);
+				$("#" + i).text(data.ORIGFDNM[i]);
 			}
 		}
 	},
