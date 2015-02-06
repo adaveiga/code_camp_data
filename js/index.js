@@ -59,7 +59,7 @@ for (var i = 0; i < 1496; i++)
 				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
 			$("#" + i).click(function(){
-				$('#div1').remove();
+				$('#div1').hide();
 				details(i, 1);
 			});
 		}
