@@ -185,7 +185,7 @@ function details(tab, id_elem, id_div)
 	jQuery('<div/>', {
 		id : "div" + id_div
 	}).insertBefore("#button" + id_div);
-	var test = tab.ORIGFDNM[i];
+	var test = tab.ORIGFDNM[id_elem];
 	console.log(test);
 	$("#div" + id_div).text($("#" + id_elem));
 }
