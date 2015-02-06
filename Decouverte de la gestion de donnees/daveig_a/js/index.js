@@ -1,6 +1,6 @@
 $.ajax(
 {
-	url : "code_camps_2/php/script.php",
+	url : "php/script.php",
 	type : "GET",
 	success : function (data) 
 	{
