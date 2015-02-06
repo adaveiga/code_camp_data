@@ -314,7 +314,9 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <?php $json = file_get_contents('liste_json.json');
+                            <?php 
+                            require_once("php/script.php");
+                            $json = file_get_contents('liste_json.json');
                             $tab = json_decode($json);
                             for ($i = 0; isset($tab->ORIGGPFR[$i]); $i++):?>
                             <?php if(substr($tab->ORIGGPFR[$i], 0, 8) == "Fromages" || substr($tab->ORIGGPFR[$i], 0, 5) == "Laits" || substr($tab->ORIGFDNM[$i], 0, 4) == "Lait" || substr($tab->ORIGGPFR[$i], 0, 6) == "Yaourt" || substr($tab->ORIGFDNM[$i], 0, 6) == "Yaourt" || substr($tab->ORIGFDNM[$i], 0, 6) == "Beurre" || substr($tab->ORIGFDNM[$i], 0, 6) == "Crème" || substr($tab->ORIGGPFR[$i], 0, 6) == "Crème")
