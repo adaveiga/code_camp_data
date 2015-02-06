@@ -195,9 +195,9 @@ function details(tab, id)
 		(function(i){
 			$($('.item')[i]).click(function(){
 				console.log(id);//$('#div'+ id).remove();
-				var id = ($(this).attr('id'));
-				console.log(id);
-				console.log(tab.ORIGFDNM[id]);
+				var id2 = ($(this).attr('id'));
+				console.log(id2);
+				console.log(tab.ORIGFDNM[id2]);
 				// $(this).text(tab.ORIGFDNM[id]);
 			})
 		})(i);
