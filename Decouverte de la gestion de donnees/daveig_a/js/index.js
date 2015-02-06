@@ -1,6 +1,6 @@
 $.ajax(
 {
-	url : "/php/script.php",
+	url : "script.php",
 	type : "GET",
 	success : function (data) 
 	{
