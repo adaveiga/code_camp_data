@@ -88,7 +88,7 @@ function fruits_legumes(tab)
 	}
 }
 
-function fruits_legumes(tab)
+function boissons(tab)
 {
 	jQuery('<div/>', {
 					id : "div3"
@@ -113,7 +113,7 @@ function fruits_legumes(tab)
 	}
 }
 
-function fruits_legumes(tab)
+function viandes_poissons(tab)
 {
 	jQuery('<div/>', {
 					id : "div4"
@@ -138,7 +138,7 @@ function fruits_legumes(tab)
 	}
 }
 
-function fruits_legumes(tab)
+function plats(tab)
 {
 	jQuery('<div/>', {
 					id : "div5"
