@@ -9,26 +9,32 @@ $.ajax(
 		$("#p1").click(function() {
 			$('#div1').remove();
 			produits_laitiers(tab);
+			details(tab, '1');
 		});
 		$("#p2").click(function() {
 			$('#div2').remove();
 			fruits_legumes(tab);
+			details(tab, '2');
 		});
 		$("#p3").click(function() {
 			$('#div3').remove();
 			boissons(tab);
+			details(tab, '3');
 		});
 		$("#p4").click(function() {
 			$('#div4').remove();
 			viandes_poissons(tab);
+			details(tab, '4');
 		});
 		$("#p5").click(function() {
 			$('#div5').remove();
 			plats(tab);
+			details(tab, '5');
 		});
 		$("#p6").click(function() {
 			$('#div6').remove();
 			autres(tab);
+			details(tab, '6');
 		});
 	},
 	error : function (data)
@@ -53,15 +59,12 @@ for (var i = 0; i < 1496; i++)
 				tab.ORIGGPFR[i].substr(0, 6) == "Crème")
 			{
 				jQuery('<a/>', {
+					class : "item",
 					id : i
 				}).appendTo("#div1");
 				jQuery('<br/>').appendTo("#div1");
 				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
-			$("#" + i).click(function(){
-				$('#div1').hide();
-				details(tab, i, 1);
-			});
 		}
 }
 
@@ -77,6 +80,7 @@ function fruits_legumes(tab)
 				tab.ORIGGPFR[i].substr(0, 15) == "Pommes de terre")
 			{
 				jQuery('<a/>', {
+					class : "item",
 					id : i
 				}).appendTo("#div2");
 				jQuery('<br/>').appendTo("#div2");
@@ -100,6 +104,7 @@ function boissons(tab)
 				tab.ORIGGPFR[i].slice(-6) == "alcool")
 			{
 				jQuery('<a/>', {
+					class : "item",
 					id : i
 				}).appendTo("#div3");
 				jQuery('<br/>').appendTo("#div3");
@@ -123,6 +128,7 @@ function viandes_poissons(tab)
 				tab.ORIGGPFR[i].slice(-8) == "poissons")
 			{
 				jQuery('<a/>', {
+					class : "item",
 					id : i
 				}).appendTo("#div4");
 				jQuery('<br/>').appendTo("#div4");
@@ -142,6 +148,7 @@ function plats(tab)
 				tab.ORIGGPFR[i].substr(0, 6) == "Pizzas")
 			{
 				jQuery('<a/>', {
+					class : "item",
 					id : i
 				}).appendTo("#div5");
 				jQuery('<br/>').appendTo("#div5");
@@ -172,6 +179,7 @@ function autres(tab)
 				tab.ORIGGPFR[i].substr(0, 6) != "Crème" && tab.ORIGGPFR[i].slice(-4) != "Inca")
 			{
 				jQuery('<a/>', {
+					class : "item",
 					id : i
 				}).appendTo("#div6");
 				jQuery('<br/>').appendTo("#div6");
@@ -180,12 +188,17 @@ function autres(tab)
 	}
 }
 
-function details(tab, id_elem, id_div)
+function details(tab, id)
 {
-	jQuery('<div/>', {
-		id : "div" + id_div
-	}).insertBefore("#button" + id_div);
-	var test = tab.ORIGFDNM[0];
-	console.log(test);
-	$("#div" + id_div).text($("#" + id_elem));
+	console.log(tab, id);
+	var length = tab.length;
+	for(i = 0; i < length; i++)
+		(function(i){
+			console.log(i);
+			$('.item').click(function(){
+				console.log(i);
+				$('#div'+id).remove();
+				console.log(tab.ORIGFDNM[i]);
+			})
+		})(i);
 }
