@@ -22,7 +22,7 @@ $.ajax(
 				jQuery('<div/>', {
 					id : i
 				}).insertBefore("#button1");
-				$("#p1").text(tab.ORIGFDNM[x]);
+				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
 		}
 	},
