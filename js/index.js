@@ -4,7 +4,7 @@ $.ajax(
 	type: "GET",
 	success : function (data) 
 	{
-		var tab = JSON.parse(data);
+		var tab = jQuery.parseJSON(data);
 		//console.log(data);
 		//tab.push(data);
 		//console.log(data);
