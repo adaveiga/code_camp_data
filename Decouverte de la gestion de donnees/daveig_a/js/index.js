@@ -199,11 +199,17 @@ function details(tab, id)
 				console.log(id_elem);
 				console.log(tab.ORIGFDNM[id_elem]);
 				jQuery("<div/>",{
-					id : id
+					id : "div" + id
 				}).insertBefore("#button" + id);
-				jQuery("<p>",{
-					text : "Catégorie :"
-				}).appendTo("#div1");
+				//jQuery("<p>",{
+				//	text : "Catégorie :"
+				//}).appendTo("#div1");
+				for (var x = 0; x < 61; x++)
+				{
+					jQuery("<p/>",{
+						id : id
+					}).appendTo("#div" + id);
+				}
 			})
 		})(i);
 }
