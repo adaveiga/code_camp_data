@@ -101,6 +101,9 @@
     </section>
 
     <!-- Portfolio Grid Section -->
+    <?php
+        require_once("php/script.php");
+    ?>
     <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row">
@@ -315,7 +318,6 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <?php 
-                            require_once("php/script.php");
                             $json = file_get_contents('liste_json.json');
                             $tab = json_decode($json);
                             for ($i = 0; isset($tab->ORIGGPFR[$i]); $i++):?>
