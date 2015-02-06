@@ -9,32 +9,32 @@ $.ajax(
 		$("#p1").click(function() {
 			$('#div1').remove();
 			produits_laitiers(tab);
-			details(tab, '1');
+			details(tab, 1);
 		});
 		$("#p2").click(function() {
 			$('#div2').remove();
 			fruits_legumes(tab);
-			details(tab, '2');
+			details(tab, 2);
 		});
 		$("#p3").click(function() {
 			$('#div3').remove();
 			boissons(tab);
-			details(tab, '3');
+			details(tab, 3);
 		});
 		$("#p4").click(function() {
 			$('#div4').remove();
 			viandes_poissons(tab);
-			details(tab, '4');
+			details(tab, 4);
 		});
 		$("#p5").click(function() {
 			$('#div5').remove();
 			plats(tab);
-			details(tab, '5');
+			details(tab, 5);
 		});
 		$("#p6").click(function() {
 			$('#div6').remove();
 			autres(tab);
-			details(tab, '6');
+			details(tab, 6);
 		});
 	},
 	error : function (data)
