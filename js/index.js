@@ -1,4 +1,4 @@
-function produits_laitiers()
+function produits_laitiers(tab)
 {
 for (var i = 0; i < 1496; i++)
 		{
@@ -29,7 +29,7 @@ $.ajax(
 		var tab = jQuery.parseJSON(data);
 		var len = tab.length;
 		$("#p1").click(function() {
-			produits_laitiers();
+			produits_laitiers(tab);
 		});	
 	},
 	error : function (data)
