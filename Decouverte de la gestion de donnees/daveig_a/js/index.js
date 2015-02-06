@@ -58,13 +58,11 @@ for (var i = 0; i < 1496; i++)
 				jQuery('<br/>').appendTo("#div1");
 				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
-	// 		$("#" + i).click(function(){
-	// 			element(i);
-	// 		});
+			$("#" + i).click(function(){
+				$('#div1').remove();
+				details(i, 1);
+			});
 		}
-	// $("#button1").click(function (){
-	// 	$("#pf1").remove("div");
-	//});
 }
 
 function fruits_legumes(tab)
@@ -180,4 +178,12 @@ function autres(tab)
 				$("#" + i).text(tab.ORIGFDNM[i]);
 		}
 	}
+}
+
+function details(id_elem, id_div)
+{
+	jQuery('<div/>', {
+		id : "div" + id_div;
+	}).insertBefore("#button" + id_div);
+	$("#div" + id_div).text("test");
 }
