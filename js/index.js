@@ -8,7 +8,7 @@ $.ajax(
 		//console.log(data);
 		//tab.push(data);
 		//console.log(data);
-		//var len = data.length;
+		var len = tab.length;
 		console.log(tab);
 		for (var i = 0; i < len; i++)
 		{
