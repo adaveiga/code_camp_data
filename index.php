@@ -313,7 +313,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
+                        <div id="pf1" class="modal-body">
                             <!--<?php 
                             $json = file_get_contents('liste_json.json');
                             $tab = json_decode($json);
