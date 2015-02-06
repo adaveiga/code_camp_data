@@ -854,7 +854,7 @@ ul.social-buttons li a:active {
 }
 
 ::selection {
-    text-shadow: none;
+    text-shadow: azure;
     background: #f;
 }
 
