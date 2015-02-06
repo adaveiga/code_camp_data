@@ -67,7 +67,7 @@ for (var i = 0; i < 1496; i++)
 	//});
 }
 
-function fruits_legumes(tab)
+/*function fruits_legumes(tab)
 {
 	jQuery('<div/>', {
 					id : "div2"
@@ -187,3 +187,4 @@ function autres(tab)
 	}
 }
 
+*/
