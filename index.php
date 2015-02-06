@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>What's In My Food?</title>
+    <title color="green">What's In My Food?</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -71,30 +71,22 @@
                     <h3 class="section-subheading text-muted">Lors de la réalisation de ce projet, nous avions différents objectifs</h3>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col-md-4">
+            <div class="row text-center" style="width: 66.66%; margin-left: auto; margin-right: auto;">
+                <div class="col-md-6">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-cutlery fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Mangez malin !</h4>
                     <p class="text-muted">En répertoriant les apports nutrionnels de certains aliments, notre objectif était d'aider le public le plus large a se renseigner sur ce qu'il mange vraiment.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Responsive Design</h4>
                     <p class="text-muted">Nous voulons vous offrir une expérience ergonomique et ludique, que ce soit sur votre ordinateur ou votre smartphone.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Navigation sécurisée</h4>
-                    <p class="text-muted">Nous n'effectuons aucune transaction commerciale pour aucun produit que nous presentons, aucune inscription payante n'est nécessaire pour l'usage de notre site.</p>
                 </div>
             </div>
         </div>
