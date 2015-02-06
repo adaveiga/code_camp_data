@@ -4,12 +4,12 @@ $.ajax(
 	type: "GET",
 	success : function (data) 
 	{
-		//var tab = [];
+		var tab = JSON.parse(data);
 		//console.log(data);
 		//tab.push(data);
 		//console.log(data);
 		//var len = data.length;
-		console.log(data);
+		console.log(tab);
 		/*for (var i = 0; i < len; i++)
 		{
 			if (data.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
