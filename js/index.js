@@ -60,7 +60,7 @@ for (var i = 0; i < 1496; i++)
 			}
 			$("#" + i).click(function(){
 				$('#div1').hide();
-				details(i, 1);
+				details(tab, i, 1);
 			});
 		}
 }
@@ -180,12 +180,12 @@ function autres(tab)
 	}
 }
 
-function details(id_elem, id_div)
+function details(tab, id_elem, id_div)
 {
 	jQuery('<div/>', {
 		id : "div" + id_div
 	}).insertBefore("#button" + id_div);
-	var test = $("#" + id_elem);
+	var test = tab.ORIGFDNM[i];
 	console.log(test);
 	$("#div" + id_div).text($("#" + id_elem));
 }
