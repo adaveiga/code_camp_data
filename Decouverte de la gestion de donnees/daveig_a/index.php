@@ -321,7 +321,7 @@
                             <?php if(substr($tab->ORIGGPFR[$i], 0, 8) == "Fromages" || substr($tab->ORIGGPFR[$i], 0, 5) == "Laits" || substr($tab->ORIGFDNM[$i], 0, 4) == "Lait" || substr($tab->ORIGGPFR[$i], 0, 6) == "Yaourt" || substr($tab->ORIGFDNM[$i], 0, 6) == "Yaourt" || substr($tab->ORIGFDNM[$i], 0, 6) == "Beurre" || substr($tab->ORIGFDNM[$i], 0, 6) == "Crème" || substr($tab->ORIGGPFR[$i], 0, 6) == "Crème")
                             echo "<a>".$tab->ORIGFDNM[$i]."</a><br>";?> 
                             <?php endfor;?>-->
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <button id="button1" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
