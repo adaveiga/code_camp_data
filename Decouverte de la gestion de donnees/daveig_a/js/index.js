@@ -29,6 +29,7 @@ $.ajax(
 		$("#p6").click(function() {
 			$('#div6').remove();
 			autres(tab);
+		});
 	},
 	error : function (data)
 	{
