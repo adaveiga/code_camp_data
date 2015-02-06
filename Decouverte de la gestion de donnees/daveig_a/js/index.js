@@ -19,7 +19,7 @@ $.ajax(
 				tab.ORIGFDNM[i].substr(0, 6) == "Crème" || 
 				tab.ORIGGPFR[i].substr(0, 6) == "Crème")
 			{
-				jQuery('<div/>', {
+				jQuery('<a/>', {
 					id : i
 				}).insertBefore("#button1");
 				$("#" + i).text(tab.ORIGFDNM[i]);
