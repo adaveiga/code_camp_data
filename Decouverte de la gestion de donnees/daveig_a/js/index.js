@@ -1,14 +1,6 @@
-$.ajax(
+function produits_laitiers()
 {
-	url: "php/script.php",
-	type: "GET",
-	success : function (data) 
-	{
-		var tab = jQuery.parseJSON(data);
-		var len = tab.length;
-		//var count = Object.keys(tab).length
-		console.log(tab);
-		for (var i = 0; i < 1496; i++)
+for (var i = 0; i < 1496; i++)
 		{
 			if (tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
 				tab.ORIGGPFR[i].substr(0, 5) == "Laits" || 
@@ -26,6 +18,19 @@ $.ajax(
 				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
 		}
+}
+
+$.ajax(
+{
+	url: "php/script.php",
+	type: "GET",
+	success : function (data) 
+	{
+		var tab = jQuery.parseJSON(data);
+		var len = tab.length;
+		$("#p1").click(function() {
+			produits_laitiers();
+		});	
 	},
 	error : function (data)
 	{
