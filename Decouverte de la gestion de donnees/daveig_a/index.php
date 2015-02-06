@@ -191,7 +191,7 @@
     </section>
 
    <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
+    <section id="team" style="background-color: white">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -262,7 +262,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
