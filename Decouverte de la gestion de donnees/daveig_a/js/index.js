@@ -194,10 +194,10 @@ function details(tab, id)
 	for(i = 0; i < length; i++)
 		(function(i){
 			$($('.item')[i]).click(function(){
-				console.log(id);//$('#div'+ id).remove();
-				var id2 = ($(this).attr('id'));
-				console.log(id2);
-				console.log(tab.ORIGFDNM[id2]);
+				$('#div'+ id).remove();
+				var id_elem = ($(this).attr('id'));
+				console.log(id_elem);
+				console.log(tab.ORIGFDNM[id_elem]);
 				// $(this).text(tab.ORIGFDNM[id]);
 			})
 		})(i);
