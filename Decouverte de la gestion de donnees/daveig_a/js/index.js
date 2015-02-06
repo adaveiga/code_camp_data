@@ -7,7 +7,7 @@ $.ajax(
 		var tab = jQuery.parseJSON(data);
 		var len = tab.length;
 		$("#p1").click(function() {
-			$('#p1').child.remove("#div1");
+			$('#p1').remove("#div1");
 			produits_laitiers(tab);
 		});	
 	},
