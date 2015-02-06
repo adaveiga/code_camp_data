@@ -10,7 +10,7 @@ $.ajax(
 			$('#div1').remove();
 			produits_laitiers(tab);
 		});
-		/*$("#p2").click(function() {
+		$("#p2").click(function() {
 			$('#div2').remove();
 			fruits_legumes(tab);
 		});
@@ -28,7 +28,7 @@ $.ajax(
 		});
 		$("#p6").click(function() {
 			$('#div6').remove();
-			autres(tab);*/
+			autres(tab);
 	},
 	error : function (data)
 	{
@@ -67,7 +67,7 @@ for (var i = 0; i < 1496; i++)
 	//});
 }
 
-/*function fruits_legumes(tab)
+function fruits_legumes(tab)
 {
 	jQuery('<div/>', {
 					id : "div2"
@@ -186,5 +186,3 @@ function autres(tab)
 		}
 	}
 }
-
-*/
