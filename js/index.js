@@ -1,4 +1,4 @@
-$.ajax(function()
+$.ajax(
 {
 	url: "php/script.php",
 	type: "GET",
