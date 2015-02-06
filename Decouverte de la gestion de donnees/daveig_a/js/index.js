@@ -6,6 +6,8 @@ $.ajax(
 	{
 		var tab = jQuery.parseJSON(data);
 		var len = tab.length;
+		var count = Object.keys(tab).length
+		console.log(count);
 		console.log(tab);
 		//var test = 1;
 		// for (var i = 0; i < len; i++)
