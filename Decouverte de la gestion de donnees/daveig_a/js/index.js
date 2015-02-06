@@ -4,16 +4,16 @@ $.ajax(
 	type: "GET",
 	success : function (data) 
 	{
-		var tab = [];
+		//var tab = [];
 		//console.log(data);
-		tab.push(data);
+		//tab.push(data);
 		//console.log(data);
 		//var len = data.length;
-		console.log(tab);
+		console.log(data);
 		/*for (var i = 0; i < len; i++)
 		{
-			if (data.ORIGGPFR.i.substr(0, 8) == "Fromages"/* || 
-				data.ORIGGPFR.i].substr(0, 5) == "Laits" || 
+			if (data.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
+				data.ORIGGPFR[i].substr(0, 5) == "Laits" || 
 				data.ORIGFDNM[i].substr(0, 4) == "Lait" || 
 				data.ORIGGPFR[i].substr(0, 6) == "Yaourt" || 
 				data.ORIGFDNM[i].substr(0, 6) == "Yaourt" || 
