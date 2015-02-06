@@ -10,7 +10,10 @@ $.ajax(
 		//console.log(data);
 		var len = tab.length;
 		console.log(tab);
-		for (var i = 0; i < len; i++)
+		$("#p1").append("div");
+				$("#p1 > div:last-child").attr("id", 0);
+				$("#0").text(data.ORIGFDNM[0]);
+		/*for (var i = 0; i < len; i++)
 		{
 			if (data.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
 				data.ORIGGPFR[i].substr(0, 5) == "Laits" || 
@@ -25,7 +28,7 @@ $.ajax(
 				$("#p1 > div:last-child").attr("id", i);
 				$("#" + i).text(data.ORIGFDNM[i]);
 			}
-		}
+		}*/
 	},
 	error : function (data)
 	{
