@@ -35,13 +35,13 @@ for (var i = 0; i < 1496; i++)
 				jQuery('<br/>').insertBefore("#button1");
 				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
-			$("#" + i).click(function(){
-				element(i);
-			});
+	// 		$("#" + i).click(function(){
+	// 			element(i);
+	// 		});
 		}
-	$("#button1").click(function (){
-		$("#pf1").remove("div");
+	// $("#button1").click(function (){
+	// 	$("#pf1").remove("div");
 	});
 }
 
-element
+//element
