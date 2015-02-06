@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <a id="p2" href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -139,7 +139,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a id="p3" href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -153,7 +153,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-5 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <a id="p4" href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -167,7 +167,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <a id="p5" href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -181,7 +181,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <a id="p6" href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -313,14 +313,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <div id="pf1" class="modal-body">
-                            <!--<?php 
-                            $json = file_get_contents('liste_json.json');
-                            $tab = json_decode($json);
-                            for ($i = 0; isset($tab->ORIGGPFR[$i]); $i++):?>
-                            <?php if(substr($tab->ORIGGPFR[$i], 0, 8) == "Fromages" || substr($tab->ORIGGPFR[$i], 0, 5) == "Laits" || substr($tab->ORIGFDNM[$i], 0, 4) == "Lait" || substr($tab->ORIGGPFR[$i], 0, 6) == "Yaourt" || substr($tab->ORIGFDNM[$i], 0, 6) == "Yaourt" || substr($tab->ORIGFDNM[$i], 0, 6) == "Beurre" || substr($tab->ORIGFDNM[$i], 0, 6) == "Crème" || substr($tab->ORIGGPFR[$i], 0, 6) == "Crème")
-                            echo "<a>".$tab->ORIGFDNM[$i]."</a><br>";?> 
-                            <?php endfor;?>-->
+                        <div class="modal-body">
                             <button id="button1" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -342,13 +335,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                             <?php $json = file_get_contents('liste_json.json');
-                            $tab = json_decode($json);
-                            for ($i = 0; isset($tab->ORIGGPFR[$i]); $i++):?>
-                            <?php if(substr($tab->ORIGGPFR[$i], 0, 6) == "Fruits" || substr($tab->ORIGGPFR[$i], 0, 8) == "Légumes" || substr($tab->ORIGGPFR[$i], 0, 15) == "Pommes de terre")
-                            echo "<a>".$tab->ORIGFDNM[$i]."</a><br>";?> 
-                            <?php endfor;?>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <button id="button2" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
