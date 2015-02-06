@@ -185,6 +185,7 @@ function details(id_elem, id_div)
 	jQuery('<div/>', {
 		id : "div" + id_div
 	}).insertBefore("#button" + id_div);
-	console.log($("#" + id_elem));
+	var test = $("#" + id_elem);
+	console.log(test);
 	$("#div" + id_div).text($("#" + id_elem));
 }
