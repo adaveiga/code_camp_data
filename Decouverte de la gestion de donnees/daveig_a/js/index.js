@@ -36,7 +36,12 @@ for (var i = 0; i < 1496; i++)
 				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
 			$("#" + i).click(function(){
-				console.log("ok");
+				element(i);
 			});
 		}
+	$("#button1").click(function (){
+		$("#pf1").remove("div");
+	});
 }
+
+element
