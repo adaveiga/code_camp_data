@@ -5,33 +5,26 @@ $.ajax(
 	success : function (data) 
 	{
 		var tab = jQuery.parseJSON(data);
-		//console.log(data);
-		//tab.push(data);
-		//console.log(data);
 		var len = tab.length;
 		console.log(tab);
-		jQuery('<div/>', {
-			id: 0
-		}).insertBefore("#button1");
-		// $("#p1").insertBefore("#button1");
-		// $("#p1 > div:last-child").attr("id", 0);
-		$("#0").text(tab.ORIGFDNM[0]);
-		/*for (var i = 0; i < len; i++)
-		{
-			if (data.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
-				data.ORIGGPFR[i].substr(0, 5) == "Laits" || 
-				data.ORIGFDNM[i].substr(0, 4) == "Lait" || 
-				data.ORIGGPFR[i].substr(0, 6) == "Yaourt" || 
-				data.ORIGFDNM[i].substr(0, 6) == "Yaourt" || 
-				data.ORIGFDNM[i].substr(0, 6) == "Beurre" || 
-				data.ORIGFDNM[i].substr(0, 6) == "Crème" || 
-				data.ORIGGPFR[i].substr(0, 6) == "Crème")
+		
+		for (var i = 0; i < len; i++)
+		{	
+			if (tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
+				tab.ORIGGPFR[i].substr(0, 5) == "Laits" || 
+				tab.ORIGFDNM[i].substr(0, 4) == "Lait" || 
+				tab.ORIGGPFR[i].substr(0, 6) == "Yaourt" || 
+				tab.ORIGFDNM[i].substr(0, 6) == "Yaourt" || 
+				tab.ORIGFDNM[i].substr(0, 6) == "Beurre" || 
+				tab.ORIGFDNM[i].substr(0, 6) == "Crème" || 
+				tab.ORIGGPFR[i].substr(0, 6) == "Crème")
 			{
-				$("#p1").append("div");
-				$("#p1 > div:last-child").attr("id", i);
-				$("#" + i).text(data.ORIGFDNM[i]);
+				jQuery('<div/>', {
+					id: i
+				}).insertBefore("#button1");
+				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
-		}*/
+		}
 	},
 	error : function (data)
 	{
