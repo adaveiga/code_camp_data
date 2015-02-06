@@ -12,7 +12,7 @@ $.ajax(
 		console.log(tab);
 		$("#p1").append("div");
 				$("#p1 > div:last-child").attr("id", 0);
-				$("#0").text(data.ORIGFDNM.0);
+				$("#0").text(data.ORIGFDNM.[0]);
 		/*for (var i = 0; i < len; i++)
 		{
 			if (data.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
