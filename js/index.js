@@ -41,7 +41,7 @@ for (var i = 0; i < 1496; i++)
 		}
 	// $("#button1").click(function (){
 	// 	$("#pf1").remove("div");
-	});
+	//});
 }
 
 //element
