@@ -190,15 +190,15 @@ function autres(tab)
 
 function details(tab, id)
 {
-	console.log(tab, id);
-	var length = tab.length;
+	var length = $('.item').length;
 	for(i = 0; i < length; i++)
 		(function(i){
-			console.log(i);
-			$('.item').click(function(){
-				console.log(i);
-				$('#div'+id).remove();
-				console.log(tab.ORIGFDNM[i]);
+			$($('.item')[i]).click(function(){
+				// $('#div'+id).remove();
+				var id = ($(this).attr('id'));
+				console.log(id);
+				console.log(tab.ORIGFDNM[id]);
+				// $(this).text(tab.ORIGFDNM[id]);
 			})
 		})(i);
 }
