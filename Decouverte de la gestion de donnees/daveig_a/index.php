@@ -101,9 +101,6 @@
     </section>
 
     <!-- Portfolio Grid Section -->
-    <?php
-        require_once("php/script.php");
-    ?>
     <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row">
