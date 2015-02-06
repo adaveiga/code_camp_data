@@ -10,7 +10,7 @@ $.ajax(
 		//console.log(data);
 		//var len = data.length;
 		console.log(tab);
-		/*for (var i = 0; i < len; i++)
+		for (var i = 0; i < len; i++)
 		{
 			if (data.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
 				data.ORIGGPFR[i].substr(0, 5) == "Laits" || 
@@ -25,7 +25,7 @@ $.ajax(
 				$("#p1 > div:last-child").attr("id", i);
 				$("#" + i).text(data.ORIGFDNM[i]);
 			}
-		}*/
+		}
 	},
 	error : function (data)
 	{
