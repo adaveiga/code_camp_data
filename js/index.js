@@ -10,9 +10,12 @@ $.ajax(
 		//console.log(data);
 		var len = tab.length;
 		console.log(tab);
-		$("#p1").append("<div>");
-				$("#p1 > div:last-child").attr("id", 0);
-				$("#0").text(tab.ORIGFDNM[0]);
+		jQuery('<div/>', {
+			id: 0
+		}).insertBefore("#button1");
+		// $("#p1").insertBefore("#button1");
+		// $("#p1 > div:last-child").attr("id", 0);
+		$("#0").text(tab.ORIGFDNM[0]);
 		/*for (var i = 0; i < len; i++)
 		{
 			if (data.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
