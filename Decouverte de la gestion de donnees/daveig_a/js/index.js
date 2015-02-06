@@ -34,8 +34,7 @@ $.ajax(
 	error : function (data)
 	{
 		console.log(data);
-	}
-});
+	}});
 
 function produits_laitiers(tab)
 {
