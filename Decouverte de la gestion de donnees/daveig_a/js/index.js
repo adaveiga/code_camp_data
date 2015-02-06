@@ -10,7 +10,7 @@ $.ajax(
 		var len = data.length;
 		for (var i = 0; i < len; i++)
 		{
-			if (data->ORIGGPFR[i].substr(0, 8) == "Fromages" /*|| 
+			if (data['ORIGGPFR'][i].substr(0, 8) == "Fromages" /*|| 
 				data->ORIGGPFR[i].substr(0, 5) == "Laits" || 
 				data->ORIGFDNM[i].substr(0, 4) == "Lait" || 
 				data->ORIGGPFR[i].substr(0, 6) == "Yaourt" || 
