@@ -5,10 +5,10 @@ $.ajax(
 	success : function (data) 
 	{
 		//console.log(data);
-		//var tab = .parseJson(data);
+		var tab = jQuery.parseJson(data);
 		//console.log(data);
 		//var len = data.length;
-		console.log(data.ORIGGPFR['0']);
+		console.log(tab);
 		/*for (var i = 0; i < len; i++)
 		{
 			if (data.ORIGGPFR.i.substr(0, 8) == "Fromages"/* || 
