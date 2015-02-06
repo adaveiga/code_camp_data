@@ -461,7 +461,7 @@
             </div>
         </div>
     </div>
-
+    <script src="js/index.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
