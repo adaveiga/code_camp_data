@@ -198,7 +198,12 @@ function details(tab, id)
 				var id_elem = ($(this).attr('id'));
 				console.log(id_elem);
 				console.log(tab.ORIGFDNM[id_elem]);
-				// $(this).text(tab.ORIGFDNM[id]);
+				jQuery("<div/>",{
+					id : id
+				}).insertBefore("#button" + id);
+				jQuery("<p>",{
+					text : "Catégorie :"
+				}).appendTo("#div1");
 			})
 		})(i);
 }
