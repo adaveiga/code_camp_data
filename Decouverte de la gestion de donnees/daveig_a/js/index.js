@@ -183,7 +183,7 @@ function autres(tab)
 function details(id_elem, id_div)
 {
 	jQuery('<div/>', {
-		id : "div" + id_div;
+		id : "div" + id_div
 	}).insertBefore("#button" + id_div);
 	$("#div" + id_div).text("test");
 }
