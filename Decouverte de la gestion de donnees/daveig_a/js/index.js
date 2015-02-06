@@ -7,10 +7,10 @@ $.ajax(
 		var tab = jQuery.parseJSON(data);
 		var len = tab.length;
 		console.log(tab);
-		
+		var test = 1;
 		for (var i = 0; i < len; i++)
 		{	
-			if (tab.ORIGGPFR[i].substr(0, 8) == "Fromages"/* || 
+			if (test == 1/*tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
 				tab.ORIGGPFR[i].substr(0, 5) == "Laits" || 
 				tab.ORIGFDNM[i].substr(0, 4) == "Lait" || 
 				tab.ORIGGPFR[i].substr(0, 6) == "Yaourt" || 
