@@ -6,27 +6,25 @@ $.ajax(
 	{
 		var tab = jQuery.parseJSON(data);
 		var len = tab.length;
-		var count = Object.keys(tab).length
-		console.log(count);
+		//var count = Object.keys(tab).length
 		console.log(tab);
-		//var test = 1;
-		// for (var i = 0; i < len; i++)
-		// {	
-		// 	if (test == 1tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
-		// 		tab.ORIGGPFR[i].substr(0, 5) == "Laits" || 
-		// 		tab.ORIGFDNM[i].substr(0, 4) == "Lait" || 
-		// 		tab.ORIGGPFR[i].substr(0, 6) == "Yaourt" || 
-		// 		tab.ORIGFDNM[i].substr(0, 6) == "Yaourt" || 
-		// 		tab.ORIGFDNM[i].substr(0, 6) == "Beurre" || 
-		// 		tab.ORIGFDNM[i].substr(0, 6) == "Crème" || 
-		// 		tab.ORIGGPFR[i].substr(0, 6) == "Crème")
-		// 	}
-		// 		console.log("ok");
-		// 		jQuery('<div/>', {
-		// 		}).insertBefore("#button1");
-		// 		$("#p1").text(tab.ORIGFDNM[i]);
-		// 	}
-		// }
+		for (var i = 0; i < 1496; i++)
+		{
+			if (tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
+				tab.ORIGGPFR[i].substr(0, 5) == "Laits" || 
+				tab.ORIGFDNM[i].substr(0, 4) == "Lait" || 
+				tab.ORIGGPFR[i].substr(0, 6) == "Yaourt" || 
+				tab.ORIGFDNM[i].substr(0, 6) == "Yaourt" || 
+				tab.ORIGFDNM[i].substr(0, 6) == "Beurre" || 
+				tab.ORIGFDNM[i].substr(0, 6) == "Crème" || 
+				tab.ORIGGPFR[i].substr(0, 6) == "Crème")
+			{
+				jQuery('<div/>', {
+					id : i
+				}).insertBefore("#button1");
+				$("#p1").text(tab.ORIGFDNM[x]);
+			}
+		}
 	},
 	error : function (data)
 	{
