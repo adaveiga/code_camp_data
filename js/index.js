@@ -194,7 +194,7 @@ function details(tab, id)
 	for(i = 0; i < length; i++)
 		(function(i){
 			$($('.item')[i]).click(function(){
-				// $('#div'+id).remove();
+				console.log(id);//$('#div'+ id).remove();
 				var id = ($(this).attr('id'));
 				console.log(id);
 				console.log(tab.ORIGFDNM[id]);
