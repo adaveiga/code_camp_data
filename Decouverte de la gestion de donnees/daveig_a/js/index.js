@@ -14,7 +14,7 @@ $.ajax(
 			{
 				$.("#p1").append("div");
 				$.("#p1 > div:last-child").attr("id", i);
-				$.("#" + i).text(data->ORIGFDNM[$i]);
+				$.("#" + i).text(data->ORIGFDNM[i]);
 			}
 		}
 	},
