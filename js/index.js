@@ -22,6 +22,7 @@ $.ajax(
 				jQuery('<a/>', {
 					id : i
 				}).insertBefore("#button1");
+				jQuery('<br/>').insertBefore("#button1");
 				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
 		}
