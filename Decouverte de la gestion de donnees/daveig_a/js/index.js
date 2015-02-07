@@ -193,7 +193,7 @@ $.ajax(
 		for(i = 1; i <= length; i++)
 		(function(i){
 			$($('.portfolio-link')[i - 1]).click(function(){
-				var fct = {0 : "produits_laitiers"},
+				var fct = {0 : "produits_laitiers"};
 				//console.log(functions[fct[i]]);
 				//console.log(functions[i]);
 				functions[fct[i - 1]](tab);
