@@ -9,11 +9,11 @@ $.ajax(
 		var length = $('.portfolio-link').length;
 		for(i = 1; i <= length; i++)
 		(function(i){
-			//var functions = ["produits_laitiers", "fruits_legumes", "boissons", "viandes_poissons", "plats", "autres"];
+			var functions = ["produits_laitiers", "fruits_legumes", "boissons", "viandes_poissons", "plats", "autres"];
 			$($('.portfolio-link')[i]).click(function(){
-				//$('#div' + i).remove();
-				console.log("test");
-				//details(tab, i);
+				$('#div' + i).remove();
+				functions[i - 1](tab);
+				details(tab, i);
 			})
 		})(i);
 		/*$("#p1").click(function() {
