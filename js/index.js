@@ -16,7 +16,7 @@ $.ajax(
 			$($('.portfolio-link')[i]).click(function(){
 				//var test = functions[i - 1];
 				$('#div' + i).remove();
-				eval(functions[i - 1](tab));
+				eval(functions[i - 1] + "(" + tab + ")");
 				details(tab, i);
 			})
 		})(i);
