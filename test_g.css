@@ -1,0 +1,25 @@
+#name-header h1 {
+    color: green;
+    border-bottom: 5px solid green;
+    font-size: 124px;
+    line-height: 110px;
+    font-weight: normal;
+    margin-bottom: auto;
+}
+
+#name-header h1 span {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+#name-header ul {
+    list-style-type: none;
+    padding: 0px 0px 8px 0px;
+    border-bottom: 1px solid green;
+}
+
+#name-header a {
+    text-decoration: none;
+    margin-top: auto;
+    margin-left: 13px;
+}
