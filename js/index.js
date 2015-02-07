@@ -12,7 +12,7 @@ $.ajax(
 			var functions = ["produits_laitiers", "fruits_legumes", "boissons", "viandes_poissons", "plats", "autres"];
 			$($('.portfolio-link')[i]).click(function(){
 				$('#div' + i).remove();
-				functions[i - 1](tab);
+				console.log(functions[i - 1](tab));
 				details(tab, i);
 			})
 		})(i);
