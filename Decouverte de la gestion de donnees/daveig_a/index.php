@@ -306,7 +306,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <button id="button1" onClick="history.go(0)" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <button id="button1" onClick="history.go(0)" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer la fenetre</button>
                         </div>
                     </div>
                 </div>
@@ -327,7 +327,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <button id="button2" onClick="history.go(0)" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <button id="button2" onClick="history.go(0)" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer la fenetre</button>
                         </div>
                     </div>
                 </div>
@@ -348,7 +348,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <button id="button3" onClick="history.go(0)" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <button id="button3" onClick="history.go(0)" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer la fenetre</button>
                         </div>
                     </div>
                 </div>
@@ -369,7 +369,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <button id="button4" onClick="history.go(0)" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <button id="button4" onClick="history.go(0)" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer la fenetre</button>
                         </div>
                     </div>
                 </div>
@@ -390,7 +390,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <button id="button5" onClick="history.go(0)" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <button id="button5" onClick="history.go(0)" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer la fenetre</button>
                         </div>
                     </div>
                 </div>
@@ -411,7 +411,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <button id="button6" onClick="history.go(0)" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <button id="button6" onClick="history.go(0)" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer la fenetre</button>
                     </div>
                 </div>
             </div>
