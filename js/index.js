@@ -213,6 +213,7 @@ function details(tab, id)
 				{
 					console.log(tab);
 					console.log(key);
+					console.log(tab.key);
 					$("#c" + i).text(key /*+ ' : ' + tab.key[id_elem]*/);
 					i++;
 				}
