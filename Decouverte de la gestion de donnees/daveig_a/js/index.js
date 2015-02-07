@@ -6,15 +6,16 @@ $.ajax(
 	{
 		var tab = jQuery.parseJSON(data);
 		var length = $('.portfolio-link').length;
-		for(i = 0; i < length; i++)
+		for(i = 1; i <= length; i++)
 		(function(i){
-			$($('.portfolio-link')[i + 1]).click(function(){
-				var functions = ["onche"];
+			$($('.portfolio-link')[i]).click(function(){
 				//var test = functions[i - 1];
-				//$('#div' + i).remove();
+				$('#div' + i).remove();
 				//console.log(functions[i - 1](tab));
 				//details(tab, i);
-				functions[i](tab);
+				console.log(i);
+				if (i == 1)
+					prodtuis_laitiers(tab);
 			})
 		})(i);
 		/*$("#p1").click(function() {
