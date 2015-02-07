@@ -204,12 +204,13 @@ function details(tab, id)
 				//jQuery("<p>",{
 				//	text : "Catégorie :"
 				//}).appendTo("#div1");
-				for (var x = 0; x < 61; x++)
+				for (var x = 1; x < 62; x++)
 				{
 					jQuery("<p/>",{
-						id : id
+						id : "c" + id
 					}).appendTo("#div" + id);
 				}
+				$("#c1").text(tab.ORIGFDNM[id_elem]);
 			})
 		})(i);
 }
