@@ -208,6 +208,7 @@ function details(tab, id)
 				 	}).appendTo("#div" + id);
 				}
 				$("#c1").text("Sous catégorie: " + tab.ORIGGPFR[id_elem]);
+				$("#c2").text("Nom: " + tab.ORIGFDNM[id_elem]);
 				//var 
 				//$.each(tab, function(test){
 				//	$(this).text([id_elem]);
