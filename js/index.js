@@ -4,28 +4,31 @@ $.ajax(
 	type: "GET",
 	success : function (data) 
 	{
+		var functions = new Array();
 		var tab = jQuery.parseJSON(data);
-		/*var length = $('.portfolio-link').length;
+		var length = $('.portfolio-link').length;
 		for(i = 1; i <= length; i++)
 		(function(i){
 			$($('.portfolio-link')[i - 1]).click(function(){
-				console.log(i);
-				if (i == 1)
-					produits_laitiers(tab);
-				else if (i == 2)
-					fruits_legumes(tab);
-				else if (i == 3)
-					boissons(tab);
-				else if (i == 4)
-					viandes_poissons(tab);
-				else if (i == 5)
-					plats(tab);
-				else if (i == 6)
-					autres(tab);
+				functions[i - 1](tab);
 				details(tab, i);
+				// console.log(i);
+				// if (i == 1)
+				// 	produits_laitiers(tab);
+				// else if (i == 2)
+				// 	fruits_legumes(tab);
+				// else if (i == 3)
+				// 	boissons(tab);
+				// else if (i == 4)
+				// 	viandes_poissons(tab);
+				// else if (i == 5)
+				// 	plats(tab);
+				// else if (i == 6)
+				// 	autres(tab);
+				// details(tab, i);
 			})
-		})(i);*/
-		$("#p1").click(function() {
+		})(i);
+		/*$("#p1").click(function() {
 			$('#div1').remove();
 			produits_laitiers(tab);
 			details(tab, 1);
@@ -54,14 +57,14 @@ $.ajax(
 			$('#div6').remove();
 			autres(tab);
 			details(tab, 6);
-		});
+		});*/
 	},
 	error : function (data)
 	{
 		console.log(data);
 	}});
 
-function produits_laitiers(tab)
+functions["produits_laitiers"] = function (tab)
 {
 	jQuery('<div/>', {
 					id : "div1"
