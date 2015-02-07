@@ -4,16 +4,17 @@ $.ajax(
 	type: "GET",
 	success : function (data) 
 	{
-		dfgfdg
 		var tab = jQuery.parseJSON(data);
 		//var len = tab.length;
 		var length = $('.portfolio-link').length;
+		console.log("test");
 		for(i = 1; i <= length; i++)
 		(function(i){
+			console.log("test2");
 			var functions = ["produits_laitiers", "fruits_legumes", "boissons", "viandes_poissons", "plats", "autres"];
 			$($('.portfolio-link')[i]).click(function(){
 				$('#div' + i).remove();
-				functions[i - 1](tab);tyuiutyi
+				functions[i - 1](tab);
 				details(tab, i);
 			})
 		})(i);
