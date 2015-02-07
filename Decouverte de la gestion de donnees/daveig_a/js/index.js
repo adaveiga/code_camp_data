@@ -207,7 +207,6 @@ function details(tab, id)
 				 		id : "c" + x
 				 	}).appendTo("#div" + id);
 				}
-				$("#c1").text("Sous catégorie: " + tab.ORIGGPFR[id_elem]);
 				var i = 0;
 				for (key in tab)
 				{
