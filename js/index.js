@@ -210,7 +210,9 @@ function details(tab, id)
 				var i = 1;
 				for (key in tab)
 				{
-					if (key != "ORIGFDCD" && key != "ORIGGPCD")
+					if (key != "ORIGFDCD" && key != "ORIGGPCD"
+						&& key.substr(0, 11) != "332 Energie"
+						&& key.substr(0, 11) != "333 Energie")
 					{
 						$("#c" + i).text(key + ' : ' + tab[key][id_elem]);
 					}
