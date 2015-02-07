@@ -266,7 +266,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; What's In Your Food ? 2015</span>
+                    <span class="copyright">Copyright &copy; What's In My Food ? 2015</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
