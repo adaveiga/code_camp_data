@@ -11,6 +11,7 @@ $.ajax(
 		for(i = 1; i <= length; i++)
 		(function(i){
 			$($('.portfolio-link')[i - 1]).click(function(){
+				console.log(functions[0]);
 				console.log(functions[i]);
 				functions[i - 1](tab);
 				details(tab, i);
