@@ -8,14 +8,14 @@ $.ajax(
 		var length = $('.portfolio-link').length;
 		for(i = 1; i <= length; i++)
 		(function(i){
-			$($('.portfolio-link')[i + 1]).click(function(){
+			$($('.portfolio-link')[i - 1]).click(function(){
 				//var test = functions[i - 1];
 				//$('#div' + i).remove();
 				//console.log(functions[i - 1](tab));
 				//details(tab, i);
 				console.log(i);
 				if (i == 1)
-					prodtuis_laitiers(tab);
+					produis_laitiers(tab);
 			})
 		})(i);
 		/*$("#p1").click(function() {
