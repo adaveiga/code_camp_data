@@ -196,8 +196,8 @@ function details(tab, id)
 			$($('.item')[i]).click(function(){
 				$('#div'+ id).remove();
 				var id_elem = ($(this).attr('id'));
-				console.log(id_elem);
-				console.log(tab.ORIGFDNM[id_elem]);
+				//console.log(id_elem);
+				//console.log(tab.ORIGFDNM[id_elem]);
 				jQuery("<div/>",{
 					id : "div" + id
 				}).insertBefore("#button" + id);
