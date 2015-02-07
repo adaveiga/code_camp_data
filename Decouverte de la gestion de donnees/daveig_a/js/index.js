@@ -8,8 +8,10 @@ $.ajax(
 		var len = tab.length;
 		$("#p1").click(function() {
 			$('#div1').remove();
-			produits_laitiers(tab);
-			details(tab, 1);
+			$('#sel1').click(function(){
+				produits_laitiers(tab);
+				details(tab, 1);
+			})
 		});
 		$("#p2").click(function() {
 			$('#div2').remove();
