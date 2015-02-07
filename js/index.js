@@ -201,25 +201,23 @@ function details(tab, id)
 				jQuery("<div/>",{
 					id : "div" + id
 				}).insertBefore("#button" + id);
-				//jQuery("<p>",{
-				//	text : "Catégorie :"
-				//}).appendTo("#div1");
-				// for (var x = 1; x < 62; x++)
-				// {
-				// 	jQuery("<p/>",{
-				// 		id : "c" + id
-				// 	}).appendTo("#div" + id);
-				// }
+				for (var x = 1; x < 62; x++)
+				{
+				 	jQuery("<p/>",{
+				 		id : "c" + id
+				 	}).appendTo("#div" + id);
+				}
+				$("#c1").text("Sous catégorie: " + tab.ORIGGPFR[id_elem]);
 				//var 
 				//$.each(tab, function(test){
 				//	$(this).text([id_elem]);
 				//});//text(tab.ORIGFDNM[id_elem]);
 
-				$.each(tab, function(id_elem){
-				console.log("Nom : " /*+ this.ORIGFDNM[id_elem]*/);
-				console.log("Sous cat: " /*+ this.ORIGGPFR[id_elem]*/);
-				console.log("Last Name: " /*+ this.Fer[id_elem]*/);
-				});
+				// $.each(tab, function(id_elem){
+				// console.log("Nom : " + this.ORIGFDNM[id_elem]);
+				// console.log("Sous cat: " + this.ORIGGPFR[id_elem]);
+				// console.log("Last Name: " + this.Fer[id_elem]);
+				// });
 			})
 		})(i);
 }
