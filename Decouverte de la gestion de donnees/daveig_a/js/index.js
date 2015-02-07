@@ -14,9 +14,9 @@ $.ajax(
 			var functions = ["produits_laitiers", "fruits_legumes", "boissons", "viandes_poissons", "plats", "autres"];
 			console.log($($('.portfolio-link')[i]));
 			$($('.portfolio-link')[i]).click(function(){
-
+				var test = functions[i - 1];
 				$('#div' + i).remove();
-				$(functions[i - 1])(tab));
+				[test](tab);
 				details(tab, i);
 			})
 		})(i);
