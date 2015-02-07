@@ -49,14 +49,14 @@ function produits_laitiers(tab)
 				}).insertBefore("#button1");
 for (var i = 0; i < 1496; i++)
 		{
-			if (tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
+			if ((tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
 				tab.ORIGGPFR[i].substr(0, 5) == "Laits" || 
 				tab.ORIGFDNM[i].substr(0, 4) == "Lait" || 
 				tab.ORIGGPFR[i].substr(0, 6) == "Yaourt" || 
 				tab.ORIGFDNM[i].substr(0, 6) == "Yaourt" || 
 				tab.ORIGFDNM[i].substr(0, 6) == "Beurre" || 
 				tab.ORIGFDNM[i].substr(0, 6) == "Crème" || 
-				tab.ORIGGPFR[i].substr(0, 6) == "Crème")
+				tab.ORIGGPFR[i].substr(0, 6) == "Crème") && tab.ORIGGPFR[i] == $("#sel1").val())
 			{
 				jQuery('<a/>', {
 					class : "item",
