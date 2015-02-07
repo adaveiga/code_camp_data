@@ -15,7 +15,7 @@ $.ajax(
 				//details(tab, i);
 				console.log(i);
 				if (i == 1)
-					produis_laitiers(tab);
+					produits_laitiers(tab);
 			})
 		})(i);
 		/*$("#p1").click(function() {
