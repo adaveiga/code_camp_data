@@ -6,9 +6,9 @@ $.ajax(
 	{
 		var tab = jQuery.parseJSON(data);
 		var length = $('.portfolio-link').length;
-		for(i = 1; i <= length; i++)
+		for(i = 0; i < length; i++)
 		(function(i){
-			$($('.portfolio-link')[i]).click(function(){
+			$($('.portfolio-link')[i + 1]).click(function(){
 				var functions = ["onche"];
 				//var test = functions[i - 1];
 				//$('#div' + i).remove();
