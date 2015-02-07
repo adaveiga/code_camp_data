@@ -10,7 +10,7 @@ $.ajax(
 		(function(i){
 			$($('.portfolio-link')[i]).click(function(){
 				//var test = functions[i - 1];
-				$('#div' + i).remove();
+				//$('#div' + i).remove();
 				//console.log(functions[i - 1](tab));
 				//details(tab, i);
 				console.log(i);
