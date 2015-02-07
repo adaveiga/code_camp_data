@@ -210,10 +210,15 @@ function details(tab, id)
 						id : "c" + id
 					}).appendTo("#div" + id);
 				}
-				$("#c1").each(function(){
-					$(this).text(tab.ORIGFDNM[id_elem]);
-				});//text(tab.ORIGFDNM[id_elem]);
-
+				//var 
+				//$.each(tab, function(test){
+				//	$(this).text([id_elem]);
+				//});//text(tab.ORIGFDNM[id_elem]);
+				$.each(tab, function(id_elem){
+				console.log("Nom : " + this.ORIGFDNM[id_elem]);
+				console.log("Sous cat: " + this.ORIGGPFR[id_elem]);
+				console.log("Last Name: " + this.Fer[id_elem]);
+				});
 			})
 		})(i);
 }
