@@ -184,20 +184,20 @@ function details(tab, id)
 
 $.ajax(
 {
-	
 	url: "php/script.php",
 	type: "GET",
 	success : function (data) 
 	{
-		console.log(functions[0]);
+		console.log(functions[]);
 		var tab = jQuery.parseJSON(data);
 		var length = $('.portfolio-link').length;
 		for(i = 1; i <= length; i++)
 		(function(i){
 			$($('.portfolio-link')[i - 1]).click(function(){
-				console.log(functions[0]);
-				console.log(functions[i]);
-				functions[i - 1](tab);
+				var fct = {0 : "produits_laitiers"},
+				//console.log(functions[fct[i]]);
+				//console.log(functions[i]);
+				functions[fct[i - 1]](tab);
 				details(tab, i);
 			})
 		})(i);
