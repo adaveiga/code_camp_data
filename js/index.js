@@ -207,12 +207,12 @@ function details(tab, id)
 				 		id : "c" + x
 				 	}).appendTo("#div" + id);
 				}
-				var i = 0;
+				var i = 1;
 				for (key in tab)
 				{
-					if (i != 0 && i != 1)
+					if (i != 1 && i != 2)
 					{
-						$("#c"+i).text(key + ' : ' + tab[key][id_elem]);
+						$("#c" + i).text(key + ' : ' + tab[key][id_elem]);
 					}
 					i++;
 				}
