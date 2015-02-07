@@ -16,7 +16,7 @@ $.ajax(
 			$($('.portfolio-link')[i]).click(function(){
 
 				$('#div' + i).remove();
-				$functions[i - 1](tab));
+				$(functions[i - 1])(tab));
 				details(tab, i);
 			})
 		})(i);
