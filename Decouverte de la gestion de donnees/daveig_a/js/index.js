@@ -8,7 +8,7 @@ $.ajax(
 		var length = $('.portfolio-link').length;
 		for(i = 1; i <= length; i++)
 		(function(i){
-			$($('.portfolio-link')[i]).click(function(){
+			$($('.portfolio-link')[i + 1]).click(function(){
 				//var test = functions[i - 1];
 				//$('#div' + i).remove();
 				//console.log(functions[i - 1](tab));
@@ -54,7 +54,7 @@ $.ajax(
 		console.log(data);
 	}});
 
-var onche = function produits_laitiers(tab)
+function produits_laitiers(tab)
 {
 	jQuery('<div/>', {
 					id : "div1"
