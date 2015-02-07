@@ -1,74 +1,5 @@
 var functions = new Array();
 
-$.ajax(
-{
-	
-	url: "php/script.php",
-	type: "GET",
-	success : function (data) 
-	{
-		console.log(functions[0]);
-		var tab = jQuery.parseJSON(data);
-		var length = $('.portfolio-link').length;
-		for(i = 1; i <= length; i++)
-		(function(i){
-			$($('.portfolio-link')[i - 1]).click(function(){
-				console.log(functions[0]);
-				console.log(functions[i]);
-				functions[i - 1](tab);
-				details(tab, i);
-				// console.log(i);
-				// if (i == 1)
-				// 	produits_laitiers(tab);
-				// else if (i == 2)
-				// 	fruits_legumes(tab);
-				// else if (i == 3)
-				// 	boissons(tab);
-				// else if (i == 4)
-				// 	viandes_poissons(tab);
-				// else if (i == 5)
-				// 	plats(tab);
-				// else if (i == 6)
-				// 	autres(tab);
-				// details(tab, i);
-			})
-		})(i);
-		/*$("#p1").click(function() {
-			$('#div1').remove();
-			produits_laitiers(tab);
-			details(tab, 1);
-		});
-		$("#p2").click(function() {
-			$('#div2').remove();
-			fruits_legumes(tab);
-			details(tab, 2);
-		});
-		$("#p3").click(function() {
-			$('#div3').remove();
-			boissons(tab);
-			details(tab, 3);
-		});
-		$("#p4").click(function() {
-			$('#div4').remove();
-			viandes_poissons(tab);
-			details(tab, 4);
-		});
-		$("#p5").click(function() {
-			$('#div5').remove();
-			plats(tab);
-			details(tab, 5);
-		});
-		$("#p6").click(function() {
-			$('#div6').remove();
-			autres(tab);
-			details(tab, 6);
-		});*/
-	},
-	error : function (data)
-	{
-		console.log(data);
-	}});
-
 functions["produits_laitiers"] = function (tab)
 {
 	jQuery('<div/>', {
@@ -139,8 +70,6 @@ function boissons(tab)
 		}
 	}
 }
-
-functions["produits_laitiers"](tab);
 
 function viandes_poissons(tab)
 {
@@ -252,3 +181,29 @@ function details(tab, id)
 			})
 		})(i);
 }
+
+$.ajax(
+{
+	
+	url: "php/script.php",
+	type: "GET",
+	success : function (data) 
+	{
+		console.log(functions[0]);
+		var tab = jQuery.parseJSON(data);
+		var length = $('.portfolio-link').length;
+		for(i = 1; i <= length; i++)
+		(function(i){
+			$($('.portfolio-link')[i - 1]).click(function(){
+				console.log(functions[]);
+				console.log(functions[i]);
+				functions[i - 1](tab);
+				details(tab, i);
+			})
+		})(i);
+	},
+	error : function (data)
+	{
+		console.log(data);
+	}
+});
