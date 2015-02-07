@@ -210,7 +210,10 @@ function details(tab, id)
 						id : "c" + id
 					}).appendTo("#div" + id);
 				}
-				$("#c1").text(tab.ORIGFDNM[id_elem]);
+				$("#c1").each(function(){
+					$(this).text(tab.ORIGFDNM[id_elem]);
+				});//text(tab.ORIGFDNM[id_elem]);
+
 			})
 		})(i);
 }
