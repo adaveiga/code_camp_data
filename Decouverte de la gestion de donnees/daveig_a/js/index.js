@@ -16,6 +16,17 @@ $.ajax(
 				console.log(i);
 				if (i == 1)
 					produits_laitiers(tab);
+				else if (i == 2)
+					fruits_legumes(tab);
+				else if (i == 3)
+					boissons(tab);
+				else if (i == 4)
+					viandes_poissons(tab);
+				else if (i == 5)
+					plats(tab);
+				else if (i == 6)
+					autres(tab);
+				details(tab, i);
 			})
 		})(i);
 		/*$("#p1").click(function() {
