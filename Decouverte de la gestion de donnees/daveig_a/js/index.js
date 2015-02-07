@@ -12,7 +12,7 @@ $.ajax(
 				var functions = [produits_laitiers, fruits_legumes, boissons, viandes_poissons, plats, autres];
 				//var test = functions[i - 1];
 				//$('#div' + i).remove();
-				functions[i - 1](tab);
+				console.log(functions[i - 1](tab));
 				//details(tab, i);
 			})
 		})(i);
