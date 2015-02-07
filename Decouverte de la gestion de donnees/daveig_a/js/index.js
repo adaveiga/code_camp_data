@@ -5,26 +5,6 @@ $.ajax(
 	success : function (data) 
 	{
 		var tab = jQuery.parseJSON(data);
-		/*var length = $('.portfolio-link').length;
-		for(i = 1; i <= length; i++)
-		(function(i){
-			$($('.portfolio-link')[i - 1]).click(function(){
-				console.log(i);
-				if (i == 1)
-					produits_laitiers(tab);
-				else if (i == 2)
-					fruits_legumes(tab);
-				else if (i == 3)
-					boissons(tab);
-				else if (i == 4)
-					viandes_poissons(tab);
-				else if (i == 5)
-					plats(tab);
-				else if (i == 6)
-					autres(tab);
-				details(tab, i);
-			})
-		})(i);*/
 		$("#p1").click(function() {
 			$('#div1').remove();
 			produits_laitiers(tab);
