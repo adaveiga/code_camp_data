@@ -15,35 +15,18 @@ $.ajax(
 				//details(tab, i);
 				console.log(i);
 				if (i == 1)
-				{
 					produits_laitiers(tab);
-					details(tab, 1);
-				}
 				else if (i == 2)
-				{
 					fruits_legumes(tab);
-					details(tab, 2);
-				}
 				else if (i == 3)
-				{
 					boissons(tab);
-					details(tab, 3);
-				}
 				else if (i == 4)
-				{
 					viandes_poissons(tab);
-					details(tab, 4);
-				}
 				else if (i == 5)
-				{
 					plats(tab);
-					details(tab, 5);
-				}
 				else if (i == 6)
-				{
 					autres(tab);
-					details(tab, 6);
-				}
+				details(tab, i);
 			})
 		})(i);
 		/*$("#p1").click(function() {
