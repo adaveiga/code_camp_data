@@ -207,26 +207,17 @@ function details(tab, id)
 				 		id : "c" + x
 				 	}).appendTo("#div" + id);
 				}
-				// $("#c1").text("Sous catégorie: " + tab.ORIGGPFR[id_elem]);
+				$("#c1").text("Sous catégorie: " + tab.ORIGGPFR[id_elem]);
 				var i = 0;
 				for (key in tab)
 				{
-					console.log(tab);
-					console.log(key);
-					console.log(tab.key);
-					$("#c" + i).text(key /*+ ' : ' + tab.key[id_elem]*/);
+					if (i != 0 && i != 1)
+					{
+						$("#c"+i).text(key + ' : ' + tab[key][id_elem]);
+					}
 					i++;
 				}
-				//var 
-				//$.each(tab, function(test){
-				//	$(this).text([id_elem]);
-				//});//text(tab.ORIGFDNM[id_elem]);
-
-				// $.each(tab, function(id_elem){
-				// console.log("Nom : " + this.ORIGFDNM[id_elem]);
-				// console.log("Sous cat: " + this.ORIGGPFR[id_elem]);
-				// console.log("Last Name: " + this.Fer[id_elem]);
-				// });
+				// $("#c2").text("Nom: " + tab.ORIGFDNM[id_elem]);
 			})
 		})(i);
 }
