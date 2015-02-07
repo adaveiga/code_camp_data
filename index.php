@@ -306,11 +306,6 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <select id="sel1">
-                                <option value="Fromages">Fromages</option> 
-                                <option value="Laits" selected>Laits</option>
-                                <option value="Yaourts et spécialités laitières type yaourts">Yogourght</option>
-                            </select>
                             <button id="button1" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
