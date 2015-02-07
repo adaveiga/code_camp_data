@@ -140,7 +140,7 @@ function boissons(tab)
 	}
 }
 
-console.log(functions[0]);
+functions["produits_laitiers"](tab);
 
 function viandes_poissons(tab)
 {
