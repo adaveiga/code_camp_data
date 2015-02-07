@@ -26,7 +26,7 @@ for (var i = 0; i < 1496; i++)
 		}
 }
 
-function fruits_legumes(tab)
+functions["fruits_legumes"] = function (tab)
 {
 	jQuery('<div/>', {
 					id : "div2"
@@ -193,7 +193,7 @@ $.ajax(
 		for(i = 1; i <= length; i++)
 		(function(i){
 			$($('.portfolio-link')[i - 1]).click(function(){
-				var fct = {0 : "produits_laitiers"};
+				var fct = {0 : "produits_laitiers", 1 : "fruits_legumes"};
 				//console.log(functions[fct[i]]);
 				//console.log(functions[i]);
 				functions[fct[i - 1]](tab);
