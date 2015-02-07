@@ -5,14 +5,10 @@ $.ajax(
 	success : function (data) 
 	{
 		var tab = jQuery.parseJSON(data);
-		var length = $('.portfolio-link').length;
+		/*var length = $('.portfolio-link').length;
 		for(i = 1; i <= length; i++)
 		(function(i){
 			$($('.portfolio-link')[i - 1]).click(function(){
-				//var test = functions[i - 1];
-				//$('#div' + i).remove();
-				//console.log(functions[i - 1](tab));
-				//details(tab, i);
 				console.log(i);
 				if (i == 1)
 					produits_laitiers(tab);
@@ -28,8 +24,8 @@ $.ajax(
 					autres(tab);
 				details(tab, i);
 			})
-		})(i);
-		/*$("#p1").click(function() {
+		})(i);*/
+		$("#p1").click(function() {
 			$('#div1').remove();
 			produits_laitiers(tab);
 			details(tab, 1);
@@ -58,7 +54,7 @@ $.ajax(
 			$('#div6').remove();
 			autres(tab);
 			details(tab, 6);
-		});*/
+		});
 	},
 	error : function (data)
 	{
