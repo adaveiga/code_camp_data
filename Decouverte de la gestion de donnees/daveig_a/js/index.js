@@ -211,10 +211,10 @@ function details(tab, id)
 				var i = 0;
 				for (key in tab)
 				{
-					$("#c"+i).text(key +' : '+ tab.key[id_elem]);
+					console.log(tab);
+					$("#c" + i).text(key + ' : ' + tab.key[id_elem]);
 					i++;
 				}
-				$("#c2").text("Nom: " + tab.ORIGFDNM[id_elem]);
 				//var 
 				//$.each(tab, function(test){
 				//	$(this).text([id_elem]);
