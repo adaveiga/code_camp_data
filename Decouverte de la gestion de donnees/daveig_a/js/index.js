@@ -1,5 +1,5 @@
 var functions = new Array();
-console.log(functions[0]);
+
 $.ajax(
 {
 	
@@ -139,6 +139,8 @@ function boissons(tab)
 		}
 	}
 }
+
+console.log(functions[0]);
 
 function viandes_poissons(tab)
 {
