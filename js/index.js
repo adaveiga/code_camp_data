@@ -210,13 +210,12 @@ function details(tab, id)
 				var i = 1;
 				for (key in tab)
 				{
-					if (key != "ORIGFDCD" && key != "ORIGGPFR")
+					if (key != "ORIGFDCD" && key != "ORIGGPCD")
 					{
 						$("#c" + i).text(key + ' : ' + tab[key][id_elem]);
 					}
 					i++;
 				}
-				// $("#c2").text("Nom: " + tab.ORIGFDNM[id_elem]);
 			})
 		})(i);
 }
