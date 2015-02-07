@@ -204,7 +204,7 @@ function details(tab, id)
 				for (var x = 1; x < 62; x++)
 				{
 				 	jQuery("<p/>",{
-				 		id : "c" + id
+				 		id : "c" + x
 				 	}).appendTo("#div" + id);
 				}
 				$("#c1").text("Sous catégorie: " + tab.ORIGGPFR[id_elem]);
