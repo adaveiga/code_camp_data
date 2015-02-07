@@ -1,13 +1,13 @@
 var functions = new Array();
-
+console.log(functions[0]);
 $.ajax(
 {
-	console.log(functions[i]);
+	
 	url: "php/script.php",
 	type: "GET",
 	success : function (data) 
 	{
-		console.log(functions[i]);
+		console.log(functions[0]);
 		var tab = jQuery.parseJSON(data);
 		var length = $('.portfolio-link').length;
 		for(i = 1; i <= length; i++)
