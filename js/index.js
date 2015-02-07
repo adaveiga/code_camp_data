@@ -14,7 +14,7 @@ $.ajax(
 				//$('#div' + i).remove();
 				//console.log(functions[i - 1](tab));
 				//details(tab, i);
-				functions[i - 1](tab);
+				functions[i](tab);
 			})
 		})(i);
 		/*$("#p1").click(function() {
