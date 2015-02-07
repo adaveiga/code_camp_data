@@ -188,7 +188,6 @@ $.ajax(
 	type: "GET",
 	success : function (data) 
 	{
-		//console.log(functions[]);
 		var tab = jQuery.parseJSON(data);
 		var length = $('.portfolio-link').length;
 		for(i = 1; i <= length; i++)
