@@ -9,12 +9,12 @@ $.ajax(
 		for(i = 1; i <= length; i++)
 		(function(i){
 			$($('.portfolio-link')[i]).click(function(){
-				//var functions = [produits_laitiers, fruits_legumes, boissons, viandes_poissons, plats, autres];
+				var functions = ["onche"];
 				//var test = functions[i - 1];
 				//$('#div' + i).remove();
 				//console.log(functions[i - 1](tab));
 				//details(tab, i);
-				onche(tab);
+				functions[i - 1](tab);
 			})
 		})(i);
 		/*$("#p1").click(function() {
