@@ -4,6 +4,7 @@ $.ajax(
 	type: "GET",
 	success : function (data) 
 	{
+		dfgfdg
 		var tab = jQuery.parseJSON(data);
 		//var len = tab.length;
 		var length = $('.portfolio-link').length;
