@@ -2,10 +2,12 @@ var functions = new Array();
 
 $.ajax(
 {
+	console.log(functions[i]);
 	url: "php/script.php",
 	type: "GET",
 	success : function (data) 
 	{
+		console.log(functions[i]);
 		var tab = jQuery.parseJSON(data);
 		var length = $('.portfolio-link').length;
 		for(i = 1; i <= length; i++)
