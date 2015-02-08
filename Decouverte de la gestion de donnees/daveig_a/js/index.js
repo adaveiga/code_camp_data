@@ -147,7 +147,7 @@ function details(tab, id)
 			$($('.item')[i]).click(function(){
 				//$('#test').dynatable();
 				$('#div'+ id).remove();
-				// var id_elem = ($(this).attr('id'));
+				var id_elem = ($(this).attr('id'));
 				jQuery("<table/>", {
 				 	id : "table_details"
 				}).insertBefore("#button" + id);
