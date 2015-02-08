@@ -156,7 +156,7 @@ function details(tab, id)
 				}).insertBefore("#button" + id);
 				jQuery("<table/>", {
 				 	id : "table_details",
-				 	css: { "margin-left" : "auto", "margin-right" : "auto"}
+				 	css: { border : "3px"}
 				}).insertBefore("#button" + id);
 				for (key in tab) {
 					if (key != "ORIGFDCD" && key != "ORIGGPCD"
