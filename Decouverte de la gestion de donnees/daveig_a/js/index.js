@@ -219,7 +219,7 @@ $.ajax(
 		for(i = 0; i < length; i++)
 			(function(i){
 				$($('.portfolio-link')[i]).click(function(){
-					window[functions.produits_laitiers](tab);
+					window[functions.produits_laitiers(tab)];
 				});
 			})(i);
 		// $("#p1").click(function() {
