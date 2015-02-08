@@ -219,7 +219,7 @@ $.ajax(
 		for(i = 0; i < length; i++)
 			(function(i){
 				$($('.portfolio-link')[i]).click(function(){
-					window[functions.func_array[0](tab)];
+					window[func_array[0](tab)];
 				});
 			})(i);
 		// $("#p1").click(function() {
