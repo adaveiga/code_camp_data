@@ -24,7 +24,7 @@ var functions = {
 }
 };
 
-var func_array = { 0: produits_laitiers}
+var func_array = { 0: functions.produits_laitiers}
 
 // var produits_laitiers = function(tab) {
 // 	jQuery('<div/>', {
