@@ -148,7 +148,7 @@ function details(tab, id)
 				//$('#test').dynatable();
 				$('#div'+ id).remove();
 				var id_elem = ($(this).attr('id'));
-				jQuery("<h1>", {
+				jQuery("<h3>", {
 					text : tab["ORIGFDNM"][id_elem]
 				}).insertBefore("#button" + id);
 				jQuery("<h2>", {
