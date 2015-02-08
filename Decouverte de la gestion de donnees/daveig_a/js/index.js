@@ -1,11 +1,9 @@
-var functions = {0 : produits_laitiers};
-
-var produits_laitiers = function(tab) {
-	jQuery('<div/>', {
+var functions = {
+	produits_laitiers: function (tab) {
+		jQuery('<div/>', {
 					id : "div1"
 				}).insertBefore("#button1");
-for (var i = 0; i < 1496; i++)
-		{
+		for (var i = 0; i < 1496; i++) {
 			if (tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
 				tab.ORIGGPFR[i].substr(0, 5) == "Laits" || 
 				tab.ORIGFDNM[i].substr(0, 4) == "Lait" || 
@@ -24,6 +22,34 @@ for (var i = 0; i < 1496; i++)
 			}
 		}
 }
+};
+
+var func_array = { 0: "produits_laitiers"}
+
+// var produits_laitiers = function(tab) {
+// 	jQuery('<div/>', {
+// 					id : "div1"
+// 				}).insertBefore("#button1");
+// for (var i = 0; i < 1496; i++)
+// 		{
+// 			if (tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
+// 				tab.ORIGGPFR[i].substr(0, 5) == "Laits" || 
+// 				tab.ORIGFDNM[i].substr(0, 4) == "Lait" || 
+// 				tab.ORIGGPFR[i].substr(0, 6) == "Yaourt" || 
+// 				tab.ORIGFDNM[i].substr(0, 6) == "Yaourt" || 
+// 				tab.ORIGFDNM[i].substr(0, 6) == "Beurre" || 
+// 				tab.ORIGFDNM[i].substr(0, 6) == "Crème" || 
+// 				tab.ORIGGPFR[i].substr(0, 6) == "Crème")
+// 			{
+// 				jQuery('<a/>', {
+// 					class : "item",
+// 					id : i
+// 				}).appendTo("#div1");
+// 				jQuery('<br/>').appendTo("#div1");
+// 				$("#" + i).text(tab.ORIGFDNM[i]);
+// 			}
+// 		}
+// }
 
 
 function fruits_legumes(tab)
@@ -193,7 +219,7 @@ $.ajax(
 		for(i = 0; i < length; i++)
 			(function(i){
 				$($('.portfolio-link')[i]).click(function(){
-					window[functions[i]](tab);
+					window[functions[func_array[0]]](tab);
 				});
 			})(i);
 		// $("#p1").click(function() {
