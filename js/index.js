@@ -1,6 +1,6 @@
 var functions = new Array();
 
-functions["produits_laitiers"] = function prod_lait (tab)
+functions["produits_laitiers"] = function (tab)
 {
 	jQuery('<div/>', {
 					id : "div1"
