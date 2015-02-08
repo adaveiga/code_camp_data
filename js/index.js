@@ -1,58 +1,10 @@
-$.ajax(
-{
-	url: "php/script.php",
-	type: "GET",
-	success : function (data) 
-	{
-		var tab = jQuery.parseJSON(data);
-		var length = $('.portfolio-link').length;
-		for(i = 0; i < length; i++)
-			(function(i){
-				$($('.portfolio-link')[i]).click(function(){
-					window["produits_laitiers"](tab);
-				});
-			})(i);
-		// $("#p1").click(function() {
-		// 	$('#div1').remove();
-		// 	produits_laitiers(tab);
-		// 	details(tab, 1);
-		// });
-		// $("#p2").click(function() {
-		// 	$('#div2').remove();
-		// 	fruits_legumes(tab);
-		// 	details(tab, 2);
-		// });
-		// $("#p3").click(function() {
-		// 	$('#div3').remove();
-		// 	boissons(tab);
-		// 	details(tab, 3);
-		// });
-		// $("#p4").click(function() {
-		// 	$('#div4').remove();
-		// 	viandes_poissons(tab);
-		// 	details(tab, 4);
-		// });
-		// $("#p5").click(function() {
-		// 	$('#div5').remove();
-		// 	plats(tab);
-		// 	details(tab, 5);
-		// });
-		// $("#p6").click(function() {
-		// 	$('#div6').remove();
-		// 	autres(tab);
-		// 	details(tab, 6);
-		// });
-	},
-	error : function (data)
-	{
-		console.log(data);
-	}});
+var functions = new Array();
 
-function produits_laitiers(tab)
+var functions["produits_laitiers"] = function (tab)
 {
 	jQuery('<div/>', {
-					id : "div2"
-				}).insertBefore("#button2");
+					id : "div1"
+				}).insertBefore("#button1");
 for (var i = 0; i < 1496; i++)
 		{
 			if (tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
@@ -67,8 +19,8 @@ for (var i = 0; i < 1496; i++)
 				jQuery('<a/>', {
 					class : "item",
 					id : i
-				}).appendTo("#div2");
-				jQuery('<br/>').appendTo("#div2");
+				}).appendTo("#div1");
+				jQuery('<br/>').appendTo("#div1");
 				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
 		}
@@ -229,3 +181,53 @@ function details(tab, id)
 			})
 		})(i);
 }
+
+$.ajax(
+{
+	url: "php/script.php",
+	type: "GET",
+	success : function (data) 
+	{
+		var tab = jQuery.parseJSON(data);
+		var length = $('.portfolio-link').length;
+		for(i = 0; i < length; i++)
+			(function(i){
+				$($('.portfolio-link')[i]).click(function(){
+					window[functions["produits_laitiers"]](tab);
+				});
+			})(i);
+		// $("#p1").click(function() {
+		// 	$('#div1').remove();
+		// 	produits_laitiers(tab);
+		// 	details(tab, 1);
+		// });
+		// $("#p2").click(function() {
+		// 	$('#div2').remove();
+		// 	fruits_legumes(tab);
+		// 	details(tab, 2);
+		// });
+		// $("#p3").click(function() {
+		// 	$('#div3').remove();
+		// 	boissons(tab);
+		// 	details(tab, 3);
+		// });
+		// $("#p4").click(function() {
+		// 	$('#div4').remove();
+		// 	viandes_poissons(tab);
+		// 	details(tab, 4);
+		// });
+		// $("#p5").click(function() {
+		// 	$('#div5').remove();
+		// 	plats(tab);
+		// 	details(tab, 5);
+		// });
+		// $("#p6").click(function() {
+		// 	$('#div6').remove();
+		// 	autres(tab);
+		// 	details(tab, 6);
+		// });
+	},
+	error : function (data)
+	{
+		console.log(data);
+	}});
