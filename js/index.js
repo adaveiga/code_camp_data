@@ -149,14 +149,16 @@ function details(tab, id)
 				$('#div'+ id).remove();
 				var id_elem = ($(this).attr('id'));
 				jQuery("<table/>", {
-				 	id : "table_details"
+				 	id : "table_details",
+				 	style : "border=\"3\""
 				}).insertBefore("#button" + id);
 				for (key in tab) {
 					if (key != "ORIGFDCD" && key != "ORIGGPCD"
 				 		&& key.substr(0, 11) != "332 Energie"
 						&& key.substr(0, 11) != "333 Energie")
 					$("#table_details").append("<tr>");
-					$("#table_details > tr:last-child").append("<td>");
+				console.log($("#table_details > tr:last-child"));
+					//$("#table_details > tr:last-child").append("<td>");
 					// $("#table_details > tr:last-child > td").text(key);
 					// $("#table_details > tr:last-child").append("<td>");
 					// $("#table_details > tr:last-child > td:last-child").text(tab[key][id_elem]);
