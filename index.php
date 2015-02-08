@@ -306,7 +306,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <button id="button1" onClick="history.go(0)" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer la fenetre</button>
+                            <button id="button1" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer la fenetre</button>
                         </div>
                     </div>
                 </div>
