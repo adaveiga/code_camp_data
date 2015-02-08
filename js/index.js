@@ -151,8 +151,13 @@ function details(tab, id)
 				jQuery("<table/>", {
 				 	id : "table_details"
 				}).insertBefore("#button" + id);
-				jQuery("<tbody/>").appendTo("#table_details");
-				// for (var x = 1; x < 63; x++) {
+				for (key in tab) {
+					if (key != "ORIGFDCD" && key != "ORIGGPCD"
+				 		&& key.substr(0, 11) != "332 Energie"
+						&& key.substr(0, 11) != "333 Energie")
+					$("#table_details").append("<tr>");
+				}
+				//for (var x = 1; x < 63; x++) {
 				//  	jQuery("<p/>",{
 				//  		id : "c" + x
 				//  	}).appendTo("#div" + id);
@@ -163,9 +168,9 @@ function details(tab, id)
 				// 		$("#c" + i).text('Sous catégorie : ' + tab[key][id_elem]);
 				// 	else if (key == "ORIGFDNM")
 				// 		$("#c" + i).text('Produit : ' + tab[key][id_elem]);
-				// 	else if (key != "ORIGFDCD" && key != "ORIGGPCD"
-				// 		&& key.substr(0, 11) != "332 Energie"
-				// 		&& key.substr(0, 11) != "333 Energie")
+					// else if (key != "ORIGFDCD" && key != "ORIGGPCD"
+				 // 		&& key.substr(0, 11) != "332 Energie"
+					// 	&& key.substr(0, 11) != "333 Energie")
 				// 	{
 				// 		$("#c" + i).text(key + ' : ' + tab[key][id_elem]);
 				// 	}
