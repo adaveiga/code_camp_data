@@ -24,7 +24,7 @@ var functions = {
 }
 };
 
-var func_array = { 0: "produits_laitiers"}
+var func_array = { 0: produits_laitiers}
 
 // var produits_laitiers = function(tab) {
 // 	jQuery('<div/>', {
@@ -219,7 +219,7 @@ $.ajax(
 		for(i = 0; i < length; i++)
 			(function(i){
 				$($('.portfolio-link')[i]).click(function(){
-					window[functions.+func_array[0]+(tab)];
+					window[functions.func_array[0](tab)];
 				});
 			})(i);
 		// $("#p1").click(function() {
