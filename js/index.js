@@ -145,30 +145,32 @@ function details(tab, id)
 	for(i = 0; i < length; i++)
 		(function (i){
 			$($('.item')[i]).click(function(){
-				$('#div'+ id).remove();
-				var id_elem = ($(this).attr('id'));
-				jQuery("<div/>", {
-					id : "div" + id
-				}).insertBefore("#button" + id);
-				for (var x = 1; x < 63; x++) {
-				 	jQuery("<p/>",{
-				 		id : "c" + x
-				 	}).appendTo("#div" + id);
-				}
-				var i = 1;
-				for (key in tab) {
-					if (key == "ORIGGPFR")
-						$("#c" + i).text('Sous catégorie : ' + tab[key][id_elem]);
-					else if (key == "ORIGFDNM")
-						$("#c" + i).text('Produit : ' + tab[key][id_elem]);
-					else if (key != "ORIGFDCD" && key != "ORIGGPCD"
-						&& key.substr(0, 11) != "332 Energie"
-						&& key.substr(0, 11) != "333 Energie")
-					{
-						$("#c" + i).text(key + ' : ' + tab[key][id_elem]);
-					}
-					i++;
-				}
+				$('#test').dynatable();
+				// $('#div'+ id).remove();
+				// var id_elem = ($(this).attr('id'));
+				// jQuery("<div/>", {
+				// 	id : "div" + id
+				// }).insertBefore("#button" + id);
+
+				// for (var x = 1; x < 63; x++) {
+				//  	jQuery("<p/>",{
+				//  		id : "c" + x
+				//  	}).appendTo("#div" + id);
+				// }
+				// var i = 1;
+				// for (key in tab) {
+				// 	if (key == "ORIGGPFR")
+				// 		$("#c" + i).text('Sous catégorie : ' + tab[key][id_elem]);
+				// 	else if (key == "ORIGFDNM")
+				// 		$("#c" + i).text('Produit : ' + tab[key][id_elem]);
+				// 	else if (key != "ORIGFDCD" && key != "ORIGGPCD"
+				// 		&& key.substr(0, 11) != "332 Energie"
+				// 		&& key.substr(0, 11) != "333 Energie")
+				// 	{
+				// 		$("#c" + i).text(key + ' : ' + tab[key][id_elem]);
+				// 	}
+				// 	i++;
+				// }
 			})
 		}) (i);
 }

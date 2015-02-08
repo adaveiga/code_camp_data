@@ -305,8 +305,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <button id="button1" onClick="history.go(0)" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer la fenetre</button>
+                        <div class="modal-body"><table style="width:100%">
+<table id="test" style="width:100%">
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>
+                            <button id="button1" onClick="history.go(0)" 0.type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fermer la fenetre</button>
                         </div>
                     </div>
                 </div>
