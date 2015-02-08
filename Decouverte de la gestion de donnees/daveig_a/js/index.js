@@ -1,7 +1,6 @@
-var functions = new Array();
+var functions = {0 : produits_laitiers};
 
-functions["produits_laitiers"] = function (tab)
-{
+var produits_laitiers = function(tab) {
 	jQuery('<div/>', {
 					id : "div1"
 				}).insertBefore("#button1");
@@ -25,6 +24,7 @@ for (var i = 0; i < 1496; i++)
 			}
 		}
 }
+
 
 function fruits_legumes(tab)
 {
@@ -193,7 +193,7 @@ $.ajax(
 		for(i = 0; i < length; i++)
 			(function(i){
 				$($('.portfolio-link')[i]).click(function(){
-					window[functions["produits_laitiers"]](tab);
+					window[functions[i]](tab);
 				});
 			})(i);
 		// $("#p1").click(function() {
