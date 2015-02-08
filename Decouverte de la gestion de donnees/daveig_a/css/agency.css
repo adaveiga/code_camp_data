@@ -871,13 +871,9 @@ body {
 }
 
 .table {
-    border-style: ridge;
-    border-width: 3px;
-    border-color: green;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
-.tr1 {
-    background-color: #33CC33; 
+.table tr:nth-child(odd) {
+    background: red;
 }
