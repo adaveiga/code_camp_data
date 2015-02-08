@@ -38,10 +38,30 @@ var functions = {
 				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
 		}
+	},
+	 boissons: function(tab) {
+	jQuery('<div/>', {
+					id : "div3"
+				}).insertBefore("#button3");
+	for (var i = 0; i < 1496; i++) {
+			if (tab.ORIGFDNM[i] == "Eau du robinet" ||
+				tab.ORIGGPFR[i].substr(0, 9) == "Cocktails" ||
+				tab.ORIGGPFR[i].substr(0, 3) == "Jus" ||
+				tab.ORIGGPFR[i].substr(0, 8) == "Liqueurs" ||
+				tab.ORIGGPFR[i].substr(0, 4) == "Vins" ||
+				tab.ORIGGPFR[i].slice(-6) == "alcool") {
+				jQuery('<a/>', {
+					class : "item",
+					id : i
+				}).appendTo("#div3");
+				jQuery('<br/>').appendTo("#div3");
+				$("#" + i).text(tab.ORIGFDNM[i]);
+			}
+		}
 	}
 };
 
-var func_array = { 0: functions.produits_laitiers, 1: functions.fruits_legumes};
+var func_array = { 0: functions.produits_laitiers, 1: functions.fruits_legumes, 2: functions.};
 
 // var produits_laitiers = function(tab) {
 // 	jQuery('<div/>', {
@@ -71,29 +91,29 @@ var func_array = { 0: functions.produits_laitiers, 1: functions.fruits_legumes};
 
 
 
-function boissons(tab)
-{
-	jQuery('<div/>', {
-					id : "div3"
-				}).insertBefore("#button3");
-	for (var i = 0; i < 1496; i++)
-		{
-			if (tab.ORIGFDNM[i] == "Eau du robinet" ||
-				tab.ORIGGPFR[i].substr(0, 9) == "Cocktails" ||
-				tab.ORIGGPFR[i].substr(0, 3) == "Jus" ||
-				tab.ORIGGPFR[i].substr(0, 8) == "Liqueurs" ||
-				tab.ORIGGPFR[i].substr(0, 4) == "Vins" ||
-				tab.ORIGGPFR[i].slice(-6) == "alcool")
-			{
-				jQuery('<a/>', {
-					class : "item",
-					id : i
-				}).appendTo("#div3");
-				jQuery('<br/>').appendTo("#div3");
-				$("#" + i).text(tab.ORIGFDNM[i]);
-		}
-	}
-}
+// function boissons(tab)
+// {
+// 	jQuery('<div/>', {
+// 					id : "div3"
+// 				}).insertBefore("#button3");
+// 	for (var i = 0; i < 1496; i++)
+// 		{
+// 			if (tab.ORIGFDNM[i] == "Eau du robinet" ||
+// 				tab.ORIGGPFR[i].substr(0, 9) == "Cocktails" ||
+// 				tab.ORIGGPFR[i].substr(0, 3) == "Jus" ||
+// 				tab.ORIGGPFR[i].substr(0, 8) == "Liqueurs" ||
+// 				tab.ORIGGPFR[i].substr(0, 4) == "Vins" ||
+// 				tab.ORIGGPFR[i].slice(-6) == "alcool")
+// 			{
+// 				jQuery('<a/>', {
+// 					class : "item",
+// 					id : i
+// 				}).appendTo("#div3");
+// 				jQuery('<br/>').appendTo("#div3");
+// 				$("#" + i).text(tab.ORIGFDNM[i]);
+// 		}
+// 	}
+// }
 
 function viandes_poissons(tab)
 {
@@ -218,6 +238,7 @@ $.ajax(
 			(function(i){
 				$($('.portfolio-link')[i]).click(function(){
 					window[func_array[i](tab)];
+					details(tab, i + 1);
 				});
 			})(i);
 		// $("#p1").click(function() {
