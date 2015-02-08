@@ -152,8 +152,8 @@ function details(tab, id)
 					text : tab["ORIGFDNM"][id_elem]
 				}).insertBefore("#button" + id);
 				jQuery("<h2>", {
-					text : tab["ORIGGPFR"][id_elem],
-					style : "align:left"
+					text : tab["ORIGGPFR"][id_elem]
+					//style : "align:left"
 				}).insertBefore("#button" + id);
 				jQuery("<table/>", {
 				 	id : "table_details",
