@@ -51,8 +51,8 @@ $.ajax(
 function produits_laitiers(tab)
 {
 	jQuery('<div/>', {
-					id : "div1"
-				}).insertBefore("#button1");
+					id : "div2"
+				}).insertBefore("#button2");
 for (var i = 0; i < 1496; i++)
 		{
 			if (tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
@@ -67,8 +67,8 @@ for (var i = 0; i < 1496; i++)
 				jQuery('<a/>', {
 					class : "item",
 					id : i
-				}).appendTo("#div1");
-				jQuery('<br/>').appendTo("#div1");
+				}).appendTo("#div2");
+				jQuery('<br/>').appendTo("#div2");
 				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
 		}
