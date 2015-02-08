@@ -145,7 +145,7 @@ function details(tab, id)
 	for(i = 0; i < length; i++)
 		(function (i){
 			$($('.item')[i]).click(function(){
-				$('#test').dynatable();
+				//$('#test').dynatable();
 				// $('#div'+ id).remove();
 				// var id_elem = ($(this).attr('id'));
 				// jQuery("<div/>", {
