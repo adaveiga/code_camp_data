@@ -146,12 +146,12 @@ function details(tab, id)
 		(function (i){
 			$($('.item')[i]).click(function(){
 				//$('#test').dynatable();
-				// $('#div'+ id).remove();
+				$('#div'+ id).remove();
 				// var id_elem = ($(this).attr('id'));
-				// jQuery("<div/>", {
-				// 	id : "div" + id
-				// }).insertBefore("#button" + id);
-
+				jQuery("<table/>", {
+				 	id : "table_details"
+				}).insertBefore("#button" + id);
+				jQuery("<tbody/>").appendTo("#table_details");
 				// for (var x = 1; x < 63; x++) {
 				//  	jQuery("<p/>",{
 				//  		id : "c" + x
@@ -174,7 +174,6 @@ function details(tab, id)
 			})
 		}) (i);
 }
-
 
 $.ajax(
 {
