@@ -145,7 +145,6 @@ function details(tab, id)
 	for(i = 0; i < length; i++)
 		(function (i){
 			$($('.item')[i]).click(function(){
-				//$('#test').dynatable();
 				$('#div'+ id).remove();
 				var id_elem = ($(this).attr('id'));
 				jQuery("<h1>", {
@@ -154,11 +153,9 @@ function details(tab, id)
 				}).insertBefore("#button" + id);
 				jQuery("<h3>", {
 					text : tab["ORIGGPFR"][id_elem]
-					//style : "align:left"
 				}).insertBefore("#button" + id);
 				jQuery("<table/>", {
-				 	id : "table_details",
-				 	css : { text-align: 'center' }
+				 	id : "table_details"
 				}).insertBefore("#button" + id);
 				for (key in tab) {
 					if (key != "ORIGFDCD" && key != "ORIGGPCD"
