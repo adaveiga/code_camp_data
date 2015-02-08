@@ -61,7 +61,7 @@ var functions = {
 	}
 };
 
-var func_array = { 0: functions.produits_laitiers, 1: functions.fruits_legumes, 2: functions.};
+var func_array = { 0: functions.produits_laitiers, 1: functions.fruits_legumes, 2: functions.boissons};
 
 // var produits_laitiers = function(tab) {
 // 	jQuery('<div/>', {
