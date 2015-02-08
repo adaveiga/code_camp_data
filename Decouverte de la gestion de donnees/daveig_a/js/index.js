@@ -164,7 +164,7 @@ function details(tab, id)
 				 		&& key.substr(0, 11) != "332 Energie"
 						&& key.substr(0, 11) != "333 Energie")
 					{
-					$("#table_details").append("<tr>");
+					$("#table_details").append("<tr class=\"tr1\">");
 					$("#table_details > tbody > tr:last-child").append("<td>");
 					$("#table_details > tbody > tr:last-child > td").text(key);
 					$("#table_details > tbody > tr:last-child").append("<td>");
