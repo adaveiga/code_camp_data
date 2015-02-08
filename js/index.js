@@ -148,12 +148,16 @@ function details(tab, id)
 				//$('#test').dynatable();
 				$('#div'+ id).remove();
 				var id_elem = ($(this).attr('id'));
+				jQuery("<h1>", {
+					text : tab[ORIGFDNM][id_elem]
+				}).insertBefore("#button" + id);
 				jQuery("<table/>", {
 				 	id : "table_details",
-				 	style : "border=3"
+				 	style : "border: 3px"
 				}).insertBefore("#button" + id);
 				for (key in tab) {
 					if (key != "ORIGFDCD" && key != "ORIGGPCD"
+						&& key != "ORIGFDNM"
 				 		&& key.substr(0, 11) != "332 Energie"
 						&& key.substr(0, 11) != "333 Energie")
 					{
