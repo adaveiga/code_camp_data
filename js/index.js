@@ -155,7 +155,8 @@ function details(tab, id)
 					text : tab["ORIGGPFR"][id_elem]
 				}).insertBefore("#button" + id);
 				jQuery("<table/>", {
-				 	id : "table_details"
+				 	id : "table_details",
+				 	css: { "margin-left" : "auto", "margin-right" : "auto"}
 				}).insertBefore("#button" + id);
 				for (key in tab) {
 					if (key != "ORIGFDCD" && key != "ORIGGPCD"
