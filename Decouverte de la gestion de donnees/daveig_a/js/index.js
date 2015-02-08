@@ -150,7 +150,7 @@ function details(tab, id)
 				var id_elem = ($(this).attr('id'));
 				jQuery("<h2>", {
 					text : tab["ORIGFDNM"][id_elem],
-					css : color : 'red'
+					css : { color : 'red' }
 				}).insertBefore("#button" + id);
 				jQuery("<h1>", {
 					text : tab["ORIGGPFR"][id_elem]
