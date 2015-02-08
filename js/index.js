@@ -21,10 +21,27 @@ var functions = {
 				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
 		}
-}
+	},
+	fruits_legumes: function (tab) {
+	jQuery('<div/>', {
+					id : "div2"
+				}).insertBefore("#button2");
+	for (var i = 0; i < 1496; i++) {
+			if (tab.ORIGGPFR[i].substr(0, 6) == "Fruits" || 
+				tab.ORIGGPFR[i].substr(0, 8) == "Légumes" || 
+				tab.ORIGGPFR[i].substr(0, 15) == "Pommes de terre") {
+				jQuery('<a/>', {
+					class : "item",
+					id : i
+				}).appendTo("#div2");
+				jQuery('<br/>').appendTo("#div2");
+				$("#" + i).text(tab.ORIGFDNM[i]);
+			}
+		}
+	}
 };
 
-var func_array = { 0: functions.produits_laitiers};
+var func_array = { 0: functions.produits_laitiers, 1: functions.fruits_legumes};
 
 // var produits_laitiers = function(tab) {
 // 	jQuery('<div/>', {
@@ -52,26 +69,7 @@ var func_array = { 0: functions.produits_laitiers};
 // }
 
 
-function fruits_legumes(tab)
-{
-	jQuery('<div/>', {
-					id : "div2"
-				}).insertBefore("#button2");
-	for (var i = 0; i < 1496; i++)
-		{
-			if (tab.ORIGGPFR[i].substr(0, 6) == "Fruits" || 
-				tab.ORIGGPFR[i].substr(0, 8) == "Légumes" || 
-				tab.ORIGGPFR[i].substr(0, 15) == "Pommes de terre")
-			{
-				jQuery('<a/>', {
-					class : "item",
-					id : i
-				}).appendTo("#div2");
-				jQuery('<br/>').appendTo("#div2");
-				$("#" + i).text(tab.ORIGFDNM[i]);
-		}
-	}
-}
+
 
 function boissons(tab)
 {
