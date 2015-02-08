@@ -156,6 +156,10 @@ function details(tab, id)
 				 		&& key.substr(0, 11) != "332 Energie"
 						&& key.substr(0, 11) != "333 Energie")
 					$("#table_details").append("<tr>");
+					$("#table_details > tr:last-child").append("<td>");
+					$("#table_details > tr:last-child > td").text(key);
+					$("#table_details > tr:last-child").append("<td>");
+					$("#table_details > tr:last-child > td:last-child").text(tab[key][id_elem]);
 				}
 				//for (var x = 1; x < 63; x++) {
 				//  	jQuery("<p/>",{
