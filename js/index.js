@@ -139,54 +139,6 @@ var func_array = {
 	5: functions.autres
 };
 
-// var produits_laitiers = function(tab) {
-// 	jQuery('<div/>', {
-// 					id : "div1"
-// 				}).insertBefore("#button1");
-// for (var i = 0; i < 1496; i++)
-// 		{
-// 			if (tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
-// 				tab.ORIGGPFR[i].substr(0, 5) == "Laits" || 
-// 				tab.ORIGFDNM[i].substr(0, 4) == "Lait" || 
-// 				tab.ORIGGPFR[i].substr(0, 6) == "Yaourt" || 
-// 				tab.ORIGFDNM[i].substr(0, 6) == "Yaourt" || 
-// 				tab.ORIGFDNM[i].substr(0, 6) == "Beurre" || 
-// 				tab.ORIGFDNM[i].substr(0, 6) == "Crème" || 
-// 				tab.ORIGGPFR[i].substr(0, 6) == "Crème")
-// 			{
-// 				jQuery('<a/>', {
-// 					class : "item",
-// 					id : i
-// 				}).appendTo("#div1");
-// 				jQuery('<br/>').appendTo("#div1");
-// 				$("#" + i).text(tab.ORIGFDNM[i]);
-// 			}
-// 		}
-// }
-// function boissons(tab)
-// {
-// 	jQuery('<div/>', {
-// 					id : "div3"
-// 				}).insertBefore("#button3");
-// 	for (var i = 0; i < 1496; i++)
-// 		{
-// 			if (tab.ORIGFDNM[i] == "Eau du robinet" ||
-// 				tab.ORIGGPFR[i].substr(0, 9) == "Cocktails" ||
-// 				tab.ORIGGPFR[i].substr(0, 3) == "Jus" ||
-// 				tab.ORIGGPFR[i].substr(0, 8) == "Liqueurs" ||
-// 				tab.ORIGGPFR[i].substr(0, 4) == "Vins" ||
-// 				tab.ORIGGPFR[i].slice(-6) == "alcool")
-// 			{
-// 				jQuery('<a/>', {
-// 					class : "item",
-// 					id : i
-// 				}).appendTo("#div3");
-// 				jQuery('<br/>').appendTo("#div3");
-// 				$("#" + i).text(tab.ORIGFDNM[i]);
-// 		}
-// 	}
-// }
-
 function details(tab, id)
 {
 	var length = $('.item').length;
