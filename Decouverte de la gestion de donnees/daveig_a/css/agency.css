@@ -875,5 +875,5 @@ body {
 }
 
 .table tr:nth-child(odd) {
-    background: rgba(0,0,0,.1);
+    background: rgba(216, 216, 212, 0.66);
 }
