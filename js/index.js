@@ -149,7 +149,7 @@ function details(tab, id)
 				$('#div'+ id).remove();
 				var id_elem = ($(this).attr('id'));
 				jQuery("<h1>", {
-					text : tab[ORIGFDNM][id_elem]
+					text : tab["ORIGFDNM"][id_elem]
 				}).insertBefore("#button" + id);
 				jQuery("<table/>", {
 				 	id : "table_details",
