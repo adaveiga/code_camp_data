@@ -1,8 +1,11 @@
 var functions = {
 	produits_laitiers: function (tab) {
 		jQuery('<div/>', {
-					id : "div1"
-				}).insertBefore("#button1");
+			id : "div1"
+		}).insertBefore("#button1");
+		jQuery('<img/>', {
+			src: "img/icons/protuis_laitiers.png"
+		}).appendTo("#div1");
 		for (var i = 0; i < 1496; i++) {
 			if (tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
 				tab.ORIGGPFR[i].substr(0, 5) == "Laits" || 
