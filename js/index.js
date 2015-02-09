@@ -4,7 +4,7 @@ var functions = {
 			id : "div1"
 		}).insertBefore("#button1");
 		jQuery('<img/>', {
-			src: "img/icons/protuis_laitiers.png"
+			src: "img/icons/produits_laitiers.png"
 		}).appendTo("#div1");
 		for (var i = 0; i < 1496; i++) {
 			if (tab.ORIGGPFR[i].substr(0, 8) == "Fromages" || 
