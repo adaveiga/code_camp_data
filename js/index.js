@@ -179,9 +179,10 @@ function details(tab, id)
 			$($('.item')[i]).click(function(){
 				$('#div'+ id).remove();
 				var id_elem = ($(this).attr('id'));
-				jQuery("<img/>", {
-					src : "img/icons/" + images[id_elem - 1] + ".png"
-				}).insertBefore("#button" + id);
+				console.log(images[id_elem]);
+				// jQuery("<img/>", {
+				// 	src : "img/icons/" + images[id_elem - 1] + ".png"
+				// }).insertBefore("#button" + id);
 				jQuery("<h1>", {
 					text : tab["ORIGFDNM"][id_elem],
 					css : { color : 'green' }
