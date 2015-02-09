@@ -170,13 +170,13 @@ var func_array = {
 
 function details(tab, id)
 {
-	var images = {  0 : "produits_laitiers", 1 : "fruits_legumes", 2 : "boissons",
-					3 : "viandes_poissons", 4 : "plats", 5 : "autres"
-	}
 	var length = $('.item').length;
 	for(i = 0; i < length; i++)
 		(function (i){
 			$($('.item')[i]).click(function(){
+				var images = {  0 : "produits_laitiers", 1 : "fruits_legumes", 2 : "boissons",
+								3 : "viandes_poissons", 4 : "plats", 5 : "autres"
+				}
 				$('#div'+ id).remove();
 				var id_elem = ($(this).attr('id'));
 				console.log(images[id_elem]);
