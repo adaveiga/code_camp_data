@@ -168,16 +168,15 @@ function details(tab, id)
 					if (key != "ORIGFDCD" && key != "ORIGGPCD"
 						&& key != "ORIGFDNM" && key != "ORIGGPFR"
 				 		&& key.substr(0, 11) != "332 Energie"
-						&& key.substr(0, 11) != "333 Energie")
-					{
-					$("#table_details").append("<tr class=\"tr1\">");
-					$("#table_details > tbody > tr:last-child").append("<td>");
-					$("#table_details > tbody > tr:last-child > td").text(key);
-					$("#table_details > tbody > tr:last-child").append("<td>");
-					$("#table_details > tbody > tr:last-child > td:last-child").text(tab[key][id_elem]);
+						&& key.substr(0, 11) != "333 Energie") {
+						$("#table_details").append("<tr class=\"tr1\">");
+						$("#table_details > tbody > tr:last-child").append("<td>");
+						$("#table_details > tbody > tr:last-child > td").text(key);
+						$("#table_details > tbody > tr:last-child").append("<td>");
+						$("#table_details > tbody > tr:last-child > td:last-child").text(tab[key][id_elem]);
 					}
+				jQuery('<br/>').appendTo("#div" + i);
 				}
-			jQuery('<br/>').appendTo("#div" + i);
 			})
 	}) (i);
 }
