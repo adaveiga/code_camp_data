@@ -21,6 +21,7 @@ var functions = {
 				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
 		}
+		jQuery('<br/>').appendTo("#div1");
 	},
 	fruits_legumes: function (tab) {
 	jQuery('<div/>', {
@@ -38,6 +39,7 @@ var functions = {
 				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
 		}
+		jQuery('<br/>').appendTo("#div2");
 	},
 	boissons: function(tab) {
 	jQuery('<div/>', {
@@ -58,6 +60,7 @@ var functions = {
 				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
 		}
+		jQuery('<br/>').appendTo("#div3");
 	},
 	viandes_poissons: function (tab) {
 	jQuery('<div/>', {
@@ -80,6 +83,7 @@ var functions = {
 				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
 		}
+		jQuery('<br/>').appendTo("#div4");
 	},
 	plats: function (tab) {
 	jQuery('<div/>', {
@@ -98,6 +102,7 @@ var functions = {
 				$("#" + i).text(tab.ORIGFDNM[i]);
 			}
 		}
+		jQuery('<br/>').appendTo("#div5");
 	},
 	autres: function(tab) {
 	jQuery('<div/>', {
@@ -173,7 +178,8 @@ function details(tab, id)
 					}
 				}
 			})
-		}) (i);
+		jQuery('<br/>').appendTo("#div" + i);
+	}) (i);
 }
 
 $.ajax(
