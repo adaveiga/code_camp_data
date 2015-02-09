@@ -160,7 +160,7 @@ function details(tab, id)
 				$('#div'+ id).remove();
 				var id_elem = ($(this).attr('id'));
 				jQuery("<img/>", {
-					src : "img/icons/" + img[i] + ".png"
+					src : "img/icons/" + images[i] + ".png"
 				}).insertBefore("#button" + id);
 				jQuery("<h1>", {
 					text : tab["ORIGFDNM"][id_elem],
