@@ -179,7 +179,7 @@ function details(tab, id)
 				}
 				$('#div'+ id).remove();
 				var id_elem = ($(this).attr('id'));
-				console.log(images[id_elem]);
+				console.log(id_elem);
 				// jQuery("<img/>", {
 				// 	src : "img/icons/" + images[id_elem - 1] + ".png"
 				// }).insertBefore("#button" + id);
