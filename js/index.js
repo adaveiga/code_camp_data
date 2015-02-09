@@ -31,6 +31,10 @@ var functions = {
 	jQuery('<div/>', {
 					id : "div2"
 				}).insertBefore("#button2");
+	jQuery('<img/>', {
+			src: "img/icons/fruits_legumes.png"
+		}).appendTo("#div2");
+	jQuery('<br/>').appendTo("#div2");
 	for (var i = 0; i < 1496; i++) {
 			if (tab.ORIGGPFR[i].substr(0, 6) == "Fruits" || 
 				tab.ORIGGPFR[i].substr(0, 8) == "Légumes" || 
@@ -49,6 +53,10 @@ var functions = {
 	jQuery('<div/>', {
 					id : "div3"
 				}).insertBefore("#button3");
+		jQuery('<img/>', {
+			src: "img/icons/boissons.png"
+		}).appendTo("#div3");
+	jQuery('<br/>').appendTo("#div3");
 	for (var i = 0; i < 1496; i++) {
 			if (tab.ORIGFDNM[i] == "Eau du robinet" ||
 				tab.ORIGGPFR[i].substr(0, 9) == "Cocktails" ||
@@ -70,6 +78,10 @@ var functions = {
 	jQuery('<div/>', {
 					id : "div4"
 				}).insertBefore("#button4");
+	jQuery('<img/>', {
+		src: "img/icons/viandes_poissons.png"
+	}).appendTo("#div4");
+	jQuery('<br/>').appendTo("#div4");
 	for (var i = 0; i < 1496; i++)
 		{
 			if (tab.ORIGGPFR[i] == "Abats" ||
@@ -91,8 +103,12 @@ var functions = {
 	},
 	plats: function (tab) {
 	jQuery('<div/>', {
-					id : "div5"
-				}).insertBefore("#button5");
+		id : "div5"
+	}).insertBefore("#button5");
+	jQuery('<img/>', {
+		src: "img/icons/plats.png"
+	}).appendTo("#div5");
+	jQuery('<br/>').appendTo("#div5");
 	for (var i = 0; i < 1496; i++)
 		{
 			if (tab.ORIGGPFR[i].substr(0, 5) == "Plats" ||
@@ -112,6 +128,10 @@ var functions = {
 	jQuery('<div/>', {
 					id : "div6"
 				}).insertBefore("#button6");
+	jQuery('<img/>', {
+		src: "img/icons/autres.png"
+	}).appendTo("#div6");
+	jQuery('<br/>').appendTo("#div6");
 	for (var i = 0; i < 1496; i++)
 		{
 			if (tab.ORIGGPFR[i].substr(0, 5) != "Plats" && tab.ORIGGPFR[i].substr(0, 6) != "Pizzas" &&
@@ -160,7 +180,7 @@ function details(tab, id)
 				$('#div'+ id).remove();
 				var id_elem = ($(this).attr('id'));
 				jQuery("<img/>", {
-					src : "img/icons/" + images[i] + ".png"
+					src : "img/icons/" + images[id_elem] + ".png"
 				}).insertBefore("#button" + id);
 				jQuery("<h1>", {
 					text : tab["ORIGFDNM"][id_elem],
