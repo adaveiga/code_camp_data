@@ -177,8 +177,8 @@ function details(tab, id)
 					$("#table_details > tbody > tr:last-child > td:last-child").text(tab[key][id_elem]);
 					}
 				}
+			jQuery('<br/>').appendTo("#div" + i);
 			})
-		jQuery('<br/>').appendTo("#div" + i);
 	}) (i);
 }
 
